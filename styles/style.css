@@ -1,0 +1,15 @@
+/* global styles */
+html {
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  background-color: #520202;
+}
+header h1 {
+  color: #cccccc;
+}
+main {
+}
+nav {
+}
