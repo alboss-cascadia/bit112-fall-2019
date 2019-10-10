@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML basics</title>
+  </head>
+
+  <body>
+    <h2>HTML is like real life.</h2>
+    <ul>
+      <li>If you open a door, close it.</li>
+      <li>If you open a tag, close it.</li>
+    </ul>
+    <hr />
+    <ul>
+      <li>You have a head and a body.</li>
+      <li>HTML has a head and a body.</li>
+      <li>
+        Your head is not inside your body, and your body is not inside your
+        head. Same thing with HTML. The head has to end before the body begins.
+      </li>
+      <li>
+        HTML is like a bodybuilder who took too many steroids. The body begins
+        immediately after the head ends. It has no neck.
+      </li>
+    </ul>
+    <p>
+      <strong
+        >You stop doing things in reverse order from how you started
+        them.</strong
+      >
+    </p>
+    <ol>
+      <li>Walk into the house</li>
+      <li>Walk up the stairs</li>
+      <li>Walk into the bathroom</li>
+      <li>Pick up the toothbrush</li>
+      <li>Brush your teeth</li>
+    </ol>
+    <p><strong>When done:</strong></p>
+    <ol>
+      <li>Stop brushing your teeth</li>
+      <li>Put down the toothbrush</li>
+      <li>Walk out of the bathroom</li>
+      <li>Walk down the stairs</li>
+      <li>Walk out of the house</li>
+    </ol>
+    <p><strong>If it was HTML:</strong></p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;in-house&gt;</p>
+      <blockquote>
+        <p>&lt;stairs&gt;</p>
+        <blockquote>
+          <p>&lt;bathroom&gt;</p>
+          <blockquote>
+            <p>&lt;toothbrush&gt;</p>
+            <blockquote>
+              <p>&lt;brush-teeth&gt;</p>
+              <p>&lt;/brush-teeth&gt;</p>
+            </blockquote>
+            <p>&lt;/toothbrush&gt;</p>
+          </blockquote>
+          <p>&lt;/bathroom&gt;</p>
+        </blockquote>
+        <p>&lt;/stairs&gt;</p>
+      </blockquote>
+      <p>&lt;/in-house&gt;</p>
+    </div>
+    <div style="margin: 10px; padding: 10px; border: 2px navy solid">
+      <p>HTML stops doing things in reverse order from how you started them.</p>
+    </div>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p>&lt;title&gt;Nesting&lt;/title&gt;</p>
+        </blockquote>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote>
+          <p>
+            &lt;h1&gt;Nesting: closing tags reverse the
+            &lt;em&gt;order&lt;/em&gt; from opening tags&lt;/h1&gt;
+          </p>
+          <p>
+            &lt;p&gt;Always &lt;strong&gt;close what you open, or
+            &lt;em&gt;finish the last thing you were
+            doing&lt;/em&gt;&lt;/strong&gt; before you get distracted.&lt;/p&gt;
+          </p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <h3>Do you like gross examples? I can do that!</h3>
+    <div style="margin: 10px; padding: 10px; border: 2px navy solid">
+      <p>
+        If you
+        <span
+          style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+          >&lt;p&gt;</span
+        >
+        you have to
+        <span
+          style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+          >&lt;/p&gt;</span
+        >.
+      </p>
+      <p>
+        If you
+        <span
+          style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+          >&lt;p&gt;</span
+        >
+        and leave the bathroom before you
+        <span
+          style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+          >&lt;/p&gt;</span
+        >, you will have a big mess to clean up, once you get out of jail.
+      </p>
+    </div>
+    <p>There, I bet you won't forget that very easily.</p>
+    <hr />
+    <p>So, let's put this to work.</p>
+    <p>Make some HTML.</p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p style="color: darkred;">&lt;html&gt;</p>
+    </div>
+    <p>Never forget the closing tag.</p>
+    <p>Oops, right.</p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html&gt;</p>
+      <p style="color: darkred;">&lt;/html&gt;</p>
+    </div>
+    <p>Good. It needs a head and a body.</p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html&gt;</p>
+      <blockquote style="color: darkred;">
+        <p>&lt;head&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>Just like in real life, your title is all in your head.</p>
+    <p>Right.</p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p style="color: darkred;">
+            &lt;title&gt;Example HTML page&lt;/title&gt;
+          </p>
+        </blockquote>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>Now put something in the body.</p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p>&lt;title&gt;Example HTML page&lt;/title&gt;</p>
+        </blockquote>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote style="color: darkred;">
+          <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
+          <p>&lt;p&gt;A heading should have some content after it.&lt;/p&gt;</p>
+          <p>&lt;p&gt;Maybe some more content than that.&lt;/p&gt;</p>
+          <p>&lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt;</p>
+          <p>&lt;p&gt;I can't say. I don't know everyone.&lt;/p&gt;</p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>Let's make sure the language and character set are in here.</p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html <span style="color: darkred;">lang="en"</span>&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p>&lt;title&gt;Example HTML page&lt;/title&gt;</p>
+          <p style="color: darkred;">&lt;meta charset="UTF-8"&gt;</p>
+        </blockquote>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote>
+          <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
+          <p>&lt;p&gt;A heading should have some content after it.&lt;/p&gt;</p>
+          <p>&lt;p&gt;Maybe some more content than that.&lt;/p&gt;</p>
+          <p>&lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt;</p>
+          <p>&lt;p&gt;I can't say. I don't know everyone.&lt;/p&gt;</p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>Cool! We are totally legal and legit with this HTML.</p>
+    <p>Let's make sure the body of this page has reasonable sections.</p>
+    <p>
+      That stuff we have in the body so far will be the main part of the page.
+    </p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html lang="en"&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p>&lt;title&gt;Example HTML page&lt;/title&gt;</p>
+          <p>&lt;meta charset="UTF-8"&gt;</p>
+        </blockquote>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote>
+          <p style="color: darkred;">&lt;main&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
+            <p>
+              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
+            </p>
+            <p>&lt;p&gt;Maybe some more content than that.&lt;/p&gt;</p>
+            <p>
+              &lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt;
+            </p>
+            <p>&lt;p&gt;I can't say. I don't know everyone.&lt;/p&gt;</p>
+          </blockquote>
+          <p style="color: darkred;">&lt;/main&gt;</p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>
+      Since pages are usually part of a site, there's likely going to be
+      something that contains stuff like the site title, the logo, and the main
+      navigation. That something will be the
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;header&gt;</span
+      >
+      container.
+    </p>
+    <p>
+      It's not the same as the
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;head&gt;</span
+      >.
+    </p>
+    <p>
+      It's in the
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;body&gt;</span
+      >, but not inside the
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;main&gt;</span
+      >
+      container.
+    </p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html lang="en"&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p>&lt;title&gt;Example HTML page&lt;/title&gt;</p>
+        </blockquote>
+        <p>&lt;meta charset="UTF-8"&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote style="color: darkred;">
+          <p>&lt;header&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Web authoring&lt;/h1&gt;</p>
+            <p>&lt;h2&gt;A really excellent class&lt;/h2&gt;</p>
+          </blockquote>
+          <p>&lt;/header&gt;</p>
+        </blockquote>
+        <blockquote>
+          <p>&lt;main&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
+            <p>
+              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
+            </p>
+            <p>&lt;p&gt;Maybe some more content than that.&lt;/p&gt;</p>
+            <p>
+              &lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt;
+            </p>
+            <p>&lt;p&gt;I can't say. I don't know everyone.&lt;/p&gt;</p>
+          </blockquote>
+          <p>&lt;/main&gt;</p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>
+      I happen to know that I want:
+    </p>
+    <ul>
+      <li>distinct styling for the 2nd paragraph,</li>
+      <li>something else for the 4th paragraph, and</li>
+      <li>
+        something completely different for the second sentence in the third
+        paragraph.
+      </li>
+    </ul>
+    <p>I need to do something with the HTML so I can add styles later.</p>
+    <p>
+      Since the paragraphs are already contained in an HTML tag, I'm going to
+      give them a class name so I can refer to it later.
+    </p>
+    <p>
+      Since the second sentence in the third paragraph is not in a container,
+      I'm going to put it in one that I can refer to later. Since the sentence
+      doesn't start and stop on its own line, I'm going to use a
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;span&gt;</span
+      >
+      container. That's what you use for inline items. Otherwise I'd use a
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;div&gt;</span
+      >.
+    </p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html lang="en"&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt;Example HTML page&lt;/title&gt;</p>
+        <p>&lt;meta charset="UTF-8"&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote>
+          <p>&lt;header&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Web authoring&lt;/h1&gt;</p>
+            <p>&lt;h2&gt;A really excellent class&lt;/h2&gt;</p>
+          </blockquote>
+          <p>&lt;/header&gt;</p>
+          <p>&lt;main&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
+            <p>
+              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
+            </p>
+            <p>
+              &lt;p
+              <span style="color: darkred;">class="more-content"</span>&gt;Maybe
+              some more content than that.&lt;/p&gt;
+            </p>
+            <p>
+              &lt;p&gt;How much is enough?
+              <span style="color: darkred;">&lt;span class="who-knows"&gt;</span
+              >Does anyone really know?<span style="color: darkred;"
+                >&lt;/span&gt;</span
+              >&lt;/p&gt;
+            </p>
+            <p>
+              &lt;p <span style="color: darkred;">class="beats-me"</span>&gt;I
+              can't say. I don't know everyone.&lt;/p&gt;
+            </p>
+          </blockquote>
+          <p>&lt;/main&gt;</p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>Are we done yet? Here's some stuff for later:</p>
+    <p>
+      Sitewide navigation will go inside that
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;header&gt;</span
+      >
+      container.
+    </p>
+    <p>
+      Inside the
+      <span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+        >&lt;main&gt;</span
+      >
+      container, you can have multiple<span
+        style="font-family: courier, 'courier new', fixed; font-weight: bold;"
+      >
+        &lt;section&gt;</span
+      >
+      containers, and other sectional elements as well. You can read more about
+      structural HTML (aka sectional elements) at
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines"
+        target="_blank"
+        rel="noopener"
+        >https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines</a
+      >.
+    </p>
+    <p>
+      Meanwhile, let's be done with HTML for a while and switch to style. So,
+      the last thing we do to the HTML is to tell it where to go for style.
+    </p>
+    <p>
+      Let's also put a couple comments in the code to help document what we've
+      done.
+    </p>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>&lt;html lang="en"&gt;</p>
+      <blockquote>
+        <p>&lt;head&gt;</p>
+        <blockquote>
+          <p>&lt;title&gt;Example HTML page&lt;/title&gt;</p>
+          <p>&lt;meta charset="UTF-8"&gt;</p>
+          <div style="color: darkred;">
+            <p>&lt;link rel="stylesheet" href="styles/style.css"&gt;</p>
+            <p>&lt;!-- now it's time to go deal with CSS --&gt;</p>
+            <p>
+              &lt;!-- that's a comment that won't display on the page --&gt;
+            </p>
+            <p>
+              &lt;!-- comments start with a &lt; ! - - and they end with two
+              dashes and a &gt; --&gt;
+            </p>
+          </div>
+        </blockquote>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <blockquote>
+          <p>&lt;header&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Web authoring&lt;/h1&gt;</p>
+            <p>&lt;h2&gt;A really excellent class&lt;/h2&gt;</p>
+          </blockquote>
+          <p>&lt;/header&gt;</p>
+          <p>&lt;main&gt;</p>
+          <blockquote>
+            <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
+            <p>
+              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
+            </p>
+            <p>
+              &lt;p class="more-content"&gt;Maybe some more content than
+              that.&lt;/p&gt;
+            </p>
+            <p>
+              &lt;p&gt;How much is enough? &lt;span class="who-knows"&gt;Does
+              anyone really know?&lt;/span&gt;&lt;/p&gt;
+            </p>
+            <p>
+              &lt;p class="beats-me"&gt;I can't say. I don't know
+              everyone.&lt;/p&gt;
+            </p>
+          </blockquote>
+          <p>&lt;/main&gt;</p>
+        </blockquote>
+        <p>&lt;/body&gt;</p>
+      </blockquote>
+      <p>&lt;/html&gt;</p>
+    </div>
+    <p>Yay, no more HTML!</p>
+    <h2>CSS for the win!</h2>
+    <div
+      style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
+    >
+      <p>/* CSS page */</p>
+      <p>
+        /* in a folder called styles, and named style.css, since that's how I
+        wrote the HTML */
+      </p>
+      <p>
+        /* Comments in CSS start with a slash and an asterisk, and end with an
+        asterisk and a slash */
+      </p>
+      <p>
+        /* We apply styles to HMTL tags by just putting the tag names here, no
+        &lt; or &gt; involved */
+      </p>
+      <p>body { color: darkslategray } /*font color */</p>
+      <p>header { background-color: navy; color: white }</p>
+      <p>
+        .more-content { font-style: italic; color: navy } /* A class in HTML
+        starts with a dot in CSS */
+      </p>
+      <p>.who-knows { font-weight: bold; font-color: red }</p>
+      <p>.beats-me { color: gray }</p>
+    </div>
+  </body>
+</html>
