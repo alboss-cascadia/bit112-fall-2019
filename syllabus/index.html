@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Example</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+main section {
+    display: flex;
+    padding: 1em;
+    flex: 1;
+}
+section {
+    border-top: 1px solid #000;
+    width: 100%;
+    ;
+}
+#overview {
+    padding: 2em 3em;
+    font-style: oblique;
+    font-size: 1.25em;
+    color: #666;
+    line-height: 1.4em;
+}
+.desc {
+    flex: 0 1 auto;
+    order: 0;
+}
+.name {
+    flex: 0 0 230px;
+    border-right: 1px dotted #a7a9ac;
+    order: -1;
+}
+.cog {
+    flex: 1;
+    order: -1;
+}
+.rev {
+    flex: 1;
+    order: 0;
+    text-align: right;
+}
+header, footer {
+    background: #a7a9ac;
+}
+header {
+    height: 120px;
+    overflow: hidden;
+}
+footer {
+    height: 25vh;
+    display: flex;
+    border-top: 1px solid #000;
+}
+header, footer, article, .name, .desc, .rev, .cog, .grades {
+    padding: 1em;
+}
+.g header > img {
+    margin-top: -1em;
+    margin-left: -1em;
+}
+.grades {
+    flex-wrap: wrap;
+}
+.grading-row {
+    display: flex;
+    flex: 1;
+}
+.grading-column {
+    width: calc(33.33%-100px);
+    padding-left: 10px;
+    flex: 1;
+}
+.grading-heading {
+    flex: 0 0 100%;
+}
+
+/* Clear floats after the columns */
+/*
+.grading-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+	
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.grading-column {
+    width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<header><img src="http://www.cascadia.edu/_resources/images/logo_website_279x120.gif" alt="Cascadia College - Bothell" align="left">
+  <h1>Web Authoring - BIT 112</h1>
+</header>
+<main>
+  <article id="overview">Students learn the basics of designing and creating web sites including HTML and CSS, image manipulation, page layout, file transfer, and internet protocols. Students consider website design principles, create several sites, and test them on the web. Special emphasis is placed on using professional software, applying industry standards, and managing multiple projects.</article>
+  <section>
+    <div class="name">
+      <h2>Meetings</h2>
+    </div>
+    <div class="desc">
+      <p>Online course from September 23 to December 10, 2019.</p>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Faculty</h2>
+    </div>
+    <div class="desc">
+      <p><strong>Al Boss</strong><br>
+        Contact Info:	cell: <a href="tel:+12067787300">206-778-7300</a>, email: <a href="mailto:aboss@cascadia.edu">aboss@cascadia.edu</a> </p>
+      <p>I'm only teaching online this quarter. The quickest way to reach me is via text to 206-778-7300. The class Slack workspace is second-best. I try to check my Cascadia email daily during the quarter.</p>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Course website</h2>
+    </div>
+    <div class="desc">
+      <p><a href="http://cascadia.instructure.com/">Look to Canvas</a> for course materials, schedules, assignment info, group sites and our primary point of contact for the course.</p>
+      <p>Discussion items I&rsquo;m using for credit will happen  in Canvas, since the system will track those automatically. However, for other discussions, most people find it easier to use Slack, so I have set up a workspace there. </p>
+      <p><a href="https://join.slack.com/t/cascadiabit11-qhh4127/shared_invite/enQtNzY4NzQ4NDQ5Mzk2LWY2N2E2MGNjNWY2ZGE0YzU0Nzc2Mjg3NmI0NGU3MTE1YTQyMDUzYzNjYTU0YjM3OTI4MTNmZDQ4MjNjYWZmNTM" title="Join here" target="_blank" rel="noreferrer noopener">Join here</a>.</p>
+      <p>Once you have joined and verified your email, the URL is <a href="https://cascadiabit11-qhh4127.slack.com/" title="https://cascadiabit11-qhh4127.slack.com" target="_blank" rel="noreferrer noopener">https://cascadiabit11-qhh4127.slack.com</a></p>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Required materials</h2>
+    </div>
+    <div class="desc">
+      <ul>
+        <li>Removable media (e.g., thumb drive) for backup</li>
+        <li>Internet access</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Optional materials</h2>
+    </div>
+    <div class="desc">
+      <p><strong>HTML5 and CSS3</strong>, <em>Elizabeth Castro and Bruce Hyslop</em>, Peachpit Press, 8th Edition, ISBN: 978-0-321-92883-2</p>
+      <p><strong>Principle of Beautiful Web Design,</strong><em> J. Beaird &amp; J. George, Sitepoint, 2014, ISBN-13: 978-0992279448</em></p>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Learning outcomes</h2>
+    </div>
+    <div class="desc">
+      <ul>
+        <li><strong>Learn Actively Effectively:</strong> Use HTML and CSS standards to create web pages. Work with key website development tools including Photoshop, Dreamweaver, and Git.</li>
+        <li><strong>Think Critically, Creatively and Reflectively</strong>: Structure a multi-page website to easily handle changes and growth</li>
+        <li><strong>Communicate with Clarity and Originality:</strong> Develop and present website designs that communicate effectively to appropriate audience.</li>
+        <li><strong>Interact in Diverse and Complex Environments:</strong> Engage in work, study, and conversation on the topics of web authoring with colleagues</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Assessment</h2>
+    </div>
+    <div class="desc">
+      <p>Your proficiency in the learning outcomes is assessed using individual exercises, assignments, and reports, along with team problem-solving in discussion forums. Course activities may involve individual work and group work. Individual assessments will often be used in combination with class activities. </p>
+   
+      <p><strong>Discussion forums</strong> will describe your understanding and contain your questions from viewing the online materials that are part of the required material for the course.</p>
+      <p><strong>Quizzes</strong> will assess students&rsquo; content mastery from the readings, viewing and coursework. Quizzes are individual, open-book assessments. No make-up quizzes allowed.</p>
+      <p><strong>Portfolio Exercises</strong> will display each student&rsquo;s course work for review and grading in a course portfolio. The portfolios will be assessed as a student developed website in their own right.</p>
+      <p><strong>Lab Assignments</strong> will include a variety of individual and peer activities, both in-class and beyond the class time. This work will allow you to practice the current course knowledge and skills. You will generally post the results of your work on labs to your course portfolio.</p>
+      <p><strong>Research Reports</strong> work should answer the particular research questions completely in your own words, citing well-documented sources. Project reports will be posted to your course portfolio.</p>
+      <p><strong>Personal Website Project </strong>will be a focus during the second half of the class. Each student will propose, plan, design, create, and test a sample website. The four main phases of the project culminate in a complete website reviewed by the class with an optional class presentation.</p>
+    </div>
+  </section>
+  <section>
+    <div class="name">
+      <h2>Responsibilities</h2>
+    </div>
+    <div class="desc">
+      <h3>Instructor</h3>
+      <ul>
+        <li>Show respect for the thoughts, ideas and contributions of others.</li>
+        <li>Be prepared for class.</li>
+        <li>Create opportunities for active learning.</li>
+        <li>Publish the criteria that will be used to assess student work</li>
+        <li>Provide timely and constructive critique of assessments.</li>
+        <li>Solicit and act on feedback from students.</li>
+      </ul>
+      <h3>Student</h3>
+      <ul>
+        <li>Show respect for the thoughts, ideas and contributions of others.</li>
+        <li>Be prepared for class.</li>
+        <li>Participate in class discussion and in-class activities.</li>
+        <li>Complete activities and assignments in a timely and professional manner.</li>
+        <li>Provide constructive feedback to instructor on the classroom-learning environment.</li>
+      </ul>
+    </div>
+  </section>
+	<section>
+	<div class="name"><h2>Learning Environment Policies</h2></div>
+	<div class="desc">
+	  <p><strong>General Learning Policy:</strong> Disorderly, abusive, or bothersome conduct will not be tolerated in the classroom, lab, or online environment. Behavior that interferes with the rights of others or disrupts teaching will result in immediate disciplinary action. <a href="https://tinyurl.com/CCStudentLearningAgreement" target="_blank">Refer to the detailed Cascadia Community College Learning Agreement</a> for details.</p></div></section>
+	
+  <section class="grades">
+    <div class="grading-heading">
+      <h2>Grading scale</h2>
+    </div>
+    <div class="grading-row">
+      <div class="grading-column">
+        <table border="1" cellspacing="0" cellpadding="5">
+          <thead>
+            <tr>
+              <th valign="top"><p>Percent earned</p></th>
+              <th valign="top"><p>Grade</p></th>
+              <th valign="top"><p>Letter grade</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top"><p>100-96 </p></td>
+              <td valign="top"><p>4.0 </p></td>
+              <td valign="top"><p>A </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>95 </p></td>
+              <td valign="top"><p>3.9 </p></td>
+              <td valign="top"><p>A </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>94 </p></td>
+              <td valign="top"><p>3.8 </p></td>
+              <td valign="top"><p>A- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>93 </p></td>
+              <td valign="top"><p>3.7 </p></td>
+              <td valign="top"><p>A- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>92 </p></td>
+              <td valign="top"><p>3.6 </p></td>
+              <td valign="top"><p>A- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>91-90 </p></td>
+              <td valign="top"><p>3.5 </p></td>
+              <td valign="top"><p>A- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>89 </p></td>
+              <td valign="top"><p>3.4 </p></td>
+              <td valign="top"><p>B+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>88 </p></td>
+              <td valign="top"><p>3.3 </p></td>
+              <td valign="top"><p>B+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>87 </p></td>
+              <td valign="top"><p>3.2 </p></td>
+              <td valign="top"><p>B+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>86 </p></td>
+              <td valign="top"><p>3.1 </p></td>
+              <td valign="top"><p>B </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>85 </p></td>
+              <td valign="top"><p>3.0 </p></td>
+              <td valign="top"><p>B </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grading-column">
+        <table border="1" cellspacing="0" cellpadding="5">
+          <thead>
+            <tr>
+              <th valign="top"><p>Percent earned</p></th>
+              <th valign="top"><p>Grade</p></th>
+              <th valign="top"><p>Letter grade</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top"><p>84 </p></td>
+              <td valign="top"><p>2.9 </p></td>
+              <td valign="top"><p>B </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>83 </p></td>
+              <td valign="top"><p>2.8 </p></td>
+              <td valign="top"><p>B- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>82 </p></td>
+              <td valign="top"><p>2.7 </p></td>
+              <td valign="top"><p>B- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>81 </p></td>
+              <td valign="top"><p>2.6 </p></td>
+              <td valign="top"><p>B- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>80 </p></td>
+              <td valign="top"><p>2.5 </p></td>
+              <td valign="top"><p>B- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>79 </p></td>
+              <td valign="top"><p>2.4 </p></td>
+              <td valign="top"><p>C+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>78 </p></td>
+              <td valign="top"><p>2.3 </p></td>
+              <td valign="top"><p>C+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>77 </p></td>
+              <td valign="top"><p>2.2 </p></td>
+              <td valign="top"><p>C+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>76 </p></td>
+              <td valign="top"><p>2.1 </p></td>
+              <td valign="top"><p>C </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>75 </p></td>
+              <td valign="top"><p>2.0 </p></td>
+              <td valign="top"><p>C </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>74 </p></td>
+              <td valign="top"><p>1.9 </p></td>
+              <td valign="top"><p>C </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grading-column">
+        <table border="1" cellspacing="0" cellpadding="5">
+          <thead>
+            <tr>
+              <th valign="top"><p>Percent earned</p></th>
+              <th valign="top"><p>Grade</p></th>
+              <th valign="top"><p>Letter grade</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top"><p>73 </p></td>
+              <td valign="top"><p>1.8 </p></td>
+              <td valign="top"><p>C- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>72 </p></td>
+              <td valign="top"><p>1.7 </p></td>
+              <td valign="top"><p>C- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>71 </p></td>
+              <td valign="top"><p>1.6 </p></td>
+              <td valign="top"><p>C- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>70 </p></td>
+              <td valign="top"><p>1.5 </p></td>
+              <td valign="top"><p>C- </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>69-68 </p></td>
+              <td valign="top"><p>1.4 </p></td>
+              <td valign="top"><p>D+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>67 </p></td>
+              <td valign="top"><p>1.3 </p></td>
+              <td valign="top"><p>D+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>66 </p></td>
+              <td valign="top"><p>1.2 </p></td>
+              <td valign="top"><p>D+ </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>65-64 </p></td>
+              <td valign="top"><p>1.1 </p></td>
+              <td valign="top"><p>D </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>63 </p></td>
+              <td valign="top"><p>1.0 </p></td>
+              <td valign="top"><p>D </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>&lt;62-0 </p></td>
+              <td valign="top"><p>0.0 </p></td>
+              <td valign="top"><p>Failing </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="cog">COG Revision 052312</div>
+  <div class="rev">Updated 9/20/2019</div>
+</footer>
+</body>
+</html>
