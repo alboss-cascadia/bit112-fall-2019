@@ -1,0 +1,184 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <title>GitHub basics</title>
+  </head>
+  <body>
+    <header>
+      <h1>GitHub</h1>
+    </header>
+    <main>
+      <aside>
+        <p>
+          <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E" target="_blank"
+            >What is GitHub?</a
+          >
+          Luckily, we have YouTube to help us answer that! (Link suggestion is
+          thanks to Krista from BIT 112, Fall 2019.)
+        </p>
+      </aside>
+      <section>
+        <h2>Publishing</h2>
+        <p>
+          We are using GitHub to store your code, and to publish your pages to
+          <em>GitHub Pages</em>. That's about 1% of what GitHub can do.
+        </p>
+        <p>
+          In your GitHub repo, look for the settings option (which I put in red
+          here but it won't be that way for you).<br />
+          <img
+            src="images/github-settings.png"
+            alt="Click 'Settings' on your GitHub repo"
+          />
+        </p>
+        <p>
+          Under <em>Settings,</em>> scroll down to <em>GitHub pages</em>. Does
+          it say something like this?<br /><img
+            src="images/github-pages.png"
+            alt="Check the 'Pages' settings"
+          />
+        </p>
+        <p>
+          That green box should give you a good clue as to whether all is well.
+        </p>
+
+        <p>
+          Remember to set a theme (Jekyll Minimalist) in the settings for your
+          repository, or it won’t publish to github.io.
+        </p>
+        <p>
+          Read
+          <a
+            href="https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages"
+            target="_blank"
+            >Configuring a publishing source for GitHub pages</a
+          >
+          if you run into problems.
+        </p>
+      </section>
+      <section>
+        <p>
+          Git is really about keeping track of changes you make to things, and
+          allowing you to do things like:
+        </p>
+        <ul>
+          <li>
+            experiment with something new and see if you like it
+            <ul>
+              <li>if you like it, merge it into your master</li>
+              <li>
+                if you don't like it, no harm done, your master is unaltered
+              </li>
+            </ul>
+          </li>
+          <li>
+            roll back to a previous working version, if you mucked something up
+            so badly that you need to abandon it
+          </li>
+          <li>
+            let multiple people work on something at once then review and merge
+            their changes into the master
+          </li>
+        </ul>
+        <p>I'm oversimplifying but I think you get the idea.</p>
+        <p>
+          Elaboration on Git replacing FTP: they do different things but there's
+          some overlap. Git is version control. I make a change, I check it into
+          Git. I make another change, I check that in. We both make a change, we
+          check them both in and Git says, wait a second, you both changed
+          stuff; you have to tell me what you want me to keep.
+        </p>
+        <p>
+          In the old days, you would make your changes, put it into version
+          control, then transfer the new version to a server somewhere. You had
+          at least four things running at once:
+        </p>
+        <ol>
+          <li>web browser</li>
+          <li>code editor</li>
+          <li>version control</li>
+          <li>file transfer software</li>
+        </ol>
+        <p>
+          It was easy to forget a step: transfer something you hadn't saved, put
+          something on the web that wasn't in version control, etc. So people
+          started building hooks into the code editor so it could add to git,
+          either automatically or manually. Then they built hooks into git so it
+          could deploy to a web server, either manually or automatically. Now I
+          can work in my editor, commit my changes to git within the editor, and
+          the editor pushes the changes into git, and git pushes the changes to
+          a web server, and I'm not having to drop everything and go through all
+          those steps.
+        </p>
+        <p>
+          That's way outside the scope for this class, but that's why Git is
+          increasing in popularity and FTP is decreasing.
+        </p>
+        <p>
+          You folks who are going into development (web, application, desktop,
+          it doesn't matter) will likely be using a lot of Git. This class will
+          barely get into the fancy stuff, just because we have enough to do
+          already.
+        </p>
+        <p>
+          One useful concept is that of <em>branches</em>. That's the thing that
+          lets you make a copy, do something to it, and then maybe abandon it or
+          maybe roll it into your main body of work. I looked around for an
+          easily digestible explanation and didn't find anything I loved. Here
+          are a couple of okay descriptions:
+        </p>
+        <p>
+          <a
+            href="https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/"
+            target="_blank"
+            rel="noopener"
+            >https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://uoftcoders.github.io/studyGroup/lessons/git/branches/lesson/"
+            target="_blank"
+            rel="noopener"
+            >https://uoftcoders.github.io/studyGroup/lessons/git/branches/lesson/</a
+          >
+        </p>
+      </section>
+      <section>
+        <p>
+          The way to delete a folder from GitHub.com is to delete every file
+          inside it; that automatically deletes the folder.
+        </p>
+        <p>
+          You can also do this by downloading a GitHub desktop tool from
+          <a href="https://desktop.github.com">https://desktop.github.com</a>
+        </p>
+        <p>
+          However, you're going to have to learn a lot more about how Git works
+          if you're going that route.
+          <a
+            href="https://help.github.com/en/desktop/getting-started-with-github-desktop"
+            >https://help.github.com/en/desktop/getting-started-with-github-desktop</a
+          >&nbsp;will help with that.
+        </p>
+        <p>
+          Or, if you use the Visual Code editor,
+          <a
+            class=""
+            href="https://www.youtube.com/watch?v=NTY5VELbCWI"
+            data-preview-alt="Visual Studio Code - Getting Started with Git(Hub)"
+            >Visual Studio Code - Getting Started with Git(Hub)</a
+          >&nbsp;
+        </p>
+        <p>
+          Or, use the command line:
+          <a
+            href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners"
+            >https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners</a
+          >&nbsp;
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

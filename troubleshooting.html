@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <title>Troubleshooting</title>
+  </head>
+  <body>
+    <header>
+      <h1>Troubleshooting</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Make sure file extensions are visible</h2>
+        <p>
+          Unless you’ve forced it to behave, your operating system is lying to
+          you. It's not showing you the complete filenames. This will drive you
+          crazy in a web or programming class.
+        </p>
+        <p>
+          By default, both Windows and MacOS are set up to hide the
+          <em>extension</em>, the dot and the letters at the end of the file
+          name.
+        </p>
+        <p>
+          If you haven't already done this, change the default on your computer
+          so you can see complete filenames including the “extension,” the dot
+          and the letters at the end of the file name.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://www.thewindowsclub.com/show-file-extensions-in-windows"
+              target="_blank"
+              >Microsoft Windows</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.idownloadblog.com/2014/10/29/how-to-show-or-hide-filename-extensions-in-os-x-yosemite/"
+              target="_blank"
+              >Mac OS</a
+            >
+          </li>
+          >
+          <li>
+            Linux assumes you are competent and doesn't hide the file extensions
+            from you by default. Linux wins this round.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Step away from the screen</h2>
+        <p>
+          The two smartest things you can do when troubleshooting and getting
+          nowhere are:
+        </p>
+
+        <ol>
+          <li>Take a break, and/or</li>
+          <li>Ask someone else to look at it</li>
+        </ol>
+
+        <p>
+          I am not great at remembering to do either of those. Next thing I
+          know, my head hurts, it&rsquo;s 4pm and I forgot to eat lunch, and
+          I&rsquo;m halfway through shaving a yak.&nbsp;(Reference:&nbsp;<a
+            title="https://seths.blog/2005/03/dont_shave_that/"
+            href="https://seths.blog/2005/03/dont_shave_that/"
+            >https://seths.blog/2005/03/dont_shave_that/</a
+          >
+          )
+        </p>
+      </section>
+      <section>
+        <h2>Cache</h2>
+        <p>
+          Bowsers store a temporary copy, or cache, of pages you've visited
+          recently. They're supposed to replace the copy when the page changes,
+          but it doesn't always work. So, any time you're not seeing a change
+          you know you made, it might be your web browser playing tricks on you.
+          Here are instructions for most browsers:
+        </p>
+        <p><a href="https://kb.iu.edu/d/ahic">https://kb.iu.edu/d/ahic</a></p>
+      </section>
+      <section>
+        <h2>Console error messages</h2>
+        <p>
+          All the browsers handle errors differently. Most of them will
+          highlight where they think the problem is, but it's still algorithms
+          and artificial intelligence and sometimes they get it wrong.
+        </p>
+        <p>For example:</p>
+        <p>&lt;h1&gt;Heading</p>
+        <p>&lt;p&gt;Blah blah blah&lt;/p&gt;</p>
+        <p>
+          Will usually return an error saying the &lt;p&gt; is misplaced because
+          it's inside a heading. The actual error is that I forgot the closing
+          &lt;/h1&gt;.
+        </p>
+        <p>
+          &lt;p&gt;This &lt;a href="page.html"&gt;link will be a
+          problem.&lt;/p&gt;&lt;/a&gt;
+        </p>
+        <p>
+          The error message will probably say something like there's a closing
+          &lt;/a&gt; that doesn't match anything. The problem is that my nesting
+          is off; I needed to &lt;/a&gt; before I &lt;/p&gt;.
+        </p>
+        <p>
+          So, even when it says there's an error, sometimes the clue it gives
+          you isn't quite right.
+        </p>
+
+        <p>
+          You can open a page from your computer in a web browser and use the
+          inspector on that. We aren't doing anything that will only work on a
+          server. Any of the browsers can open a file from your computer, and
+          their inspector consoles will work.
+        </p>
+
+        <p>
+          Of course, if you would like someone else in the class (including me)
+          to help figure something out, the code needs to be in GitHub unless
+          one of us is sitting at your computer with you. And, even once it's
+          working on your computer, it needs a final check on the server just to
+          make sure it works there as well. Sometimes things work on your
+          computer but not on the server. It doesn't happen often, but when it
+          does happen it's inconvenient.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
