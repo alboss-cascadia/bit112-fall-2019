@@ -66,6 +66,9 @@ main {
   padding: 10px;
   max-width: 1000px;
 }
+#ref-links {
+  border-top: 2px solid #999999;
+}
 #ref-links li {
   line-height: 1.7rem;
 }
