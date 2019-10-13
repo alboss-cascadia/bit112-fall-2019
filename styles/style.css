@@ -45,10 +45,11 @@ header nav ul li a {
   margin-right: -4px;
 }
 header nav ul li.disabled {
-  color: #000000;
   background-color: lightgray;
+  color: #000000;
 }
 header nav ul li.disabled a {
+  padding: 20px;
   cursor: not-allowed;
   pointer-events: none;
 }
