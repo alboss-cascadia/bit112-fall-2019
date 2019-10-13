@@ -44,6 +44,14 @@ header nav ul li a {
   /* reference: https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
   margin-right: -4px;
 }
+header nav ul li.disabled {
+  color: #000000;
+  background-color: lightgray;
+}
+header nav ul li.disabled a {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 header nav ul li a:link,
 header nav ul li a:visited {
   color: #cccccc;
