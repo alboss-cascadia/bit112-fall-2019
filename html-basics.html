@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
     <title>HTML basics</title>
   </head>
-
   <body>
-    <section>
+    <header>
+      <h1>HTML basics</h1>
+      <nav>
+          <ul>
+            <li><a href="index.html">Main page</a></li>
+          </ul>
+    </header>
+    <main>
+  <section>
     <h2>HTML is like real life.</h2>
     <ul>
       <li>If you open a door, close it.</li>
@@ -16,21 +23,15 @@
     <ul>
       <li>You have a head and a body.</li>
       <li>HTML has a head and a body.</li>
-      <li>
-        Your head is not inside your body, and your body is not inside your
-        head. Same thing with HTML. The head has to end before the body begins.
-      </li>
-      <li>
-        HTML is like a bodybuilder who took too many steroids. The body begins
-        immediately after the head ends. It has no neck.
-      </li>
+      <li> Your head is not inside your body, and your body is not inside your
+        head. Same thing with HTML. The head has to end before the body begins. </li>
+      <li> HTML is like a bodybuilder who took too many steroids. The body begins
+        immediately after the head ends. It has no neck. </li>
     </ul>
-    <p>
-      <strong
+    <p> <strong
         >You stop doing things in reverse order from how you started
-        them.</strong
-      >
-    </p>
+      them.</strong
+      > </p>
     <ol>
       <li>Walk into the house</li>
       <li>Walk up the stairs</li>
@@ -84,15 +85,11 @@
         <p>&lt;/head&gt;</p>
         <p>&lt;body&gt;</p>
         <blockquote>
-          <p>
-            &lt;h1&gt;Nesting: closing tags reverse the
-            &lt;em&gt;order&lt;/em&gt; from opening tags&lt;/h1&gt;
-          </p>
-          <p>
-            &lt;p&gt;Always &lt;strong&gt;close what you open, or
+          <p> &lt;h1&gt;Nesting: closing tags reverse the
+            &lt;em&gt;order&lt;/em&gt; from opening tags&lt;/h1&gt; </p>
+          <p> &lt;p&gt;Always &lt;strong&gt;close what you open, or
             &lt;em&gt;finish the last thing you were
-            doing&lt;/em&gt;&lt;/strong&gt; before you get distracted.&lt;/p&gt;
-          </p>
+            doing&lt;/em&gt;&lt;/strong&gt; before you get distracted.&lt;/p&gt; </p>
         </blockquote>
         <p>&lt;/body&gt;</p>
       </blockquote>
@@ -100,30 +97,20 @@
     </div>
     <h3>Do you like gross examples? I can do that!</h3>
     <div style="margin: 10px; padding: 10px; border: 2px navy solid">
-      <p>
-        If you
-        <span
+      <p> If you <span
           style="font-family: courier, 'courier new', fixed; font-weight: bold;"
           >&lt;p&gt;</span
-        >
-        you have to
-        <span
+        > you have to <span
           style="font-family: courier, 'courier new', fixed; font-weight: bold;"
           >&lt;/p&gt;</span
-        >.
-      </p>
-      <p>
-        If you
-        <span
+        >. </p>
+      <p> If you <span
           style="font-family: courier, 'courier new', fixed; font-weight: bold;"
           >&lt;p&gt;</span
-        >
-        and leave the bathroom before you
-        <span
+        > and leave the bathroom before you <span
           style="font-family: courier, 'courier new', fixed; font-weight: bold;"
           >&lt;/p&gt;</span
-        >, you will have a big mess to clean up, once you get out of jail.
-      </p>
+        >, you will have a big mess to clean up, once you get out of jail. </p>
     </div>
     <p>There, I bet you won't forget that very easily.</p>
     <hr />
@@ -164,9 +151,7 @@
       <blockquote>
         <p>&lt;head&gt;</p>
         <blockquote>
-          <p style="color: darkred;">
-            &lt;title&gt;Example HTML page&lt;/title&gt;
-          </p>
+          <p style="color: darkred;"> &lt;title&gt;Example HTML page&lt;/title&gt; </p>
         </blockquote>
         <p>&lt;/head&gt;</p>
         <p>&lt;body&gt;</p>
@@ -223,9 +208,7 @@
     </div>
     <p>Cool! We are totally legal and legit with this HTML.</p>
     <p>Let's make sure the body of this page has reasonable sections.</p>
-    <p>
-      That stuff we have in the body so far will be the main part of the page.
-    </p>
+    <p> That stuff we have in the body so far will be the main part of the page. </p>
     <div
       style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
     >
@@ -242,13 +225,9 @@
           <p style="color: darkred;">&lt;main&gt;</p>
           <blockquote>
             <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
-            <p>
-              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
-            </p>
+            <p> &lt;p&gt;A heading should have some content after it.&lt;/p&gt; </p>
             <p>&lt;p&gt;Maybe some more content than that.&lt;/p&gt;</p>
-            <p>
-              &lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt;
-            </p>
+            <p> &lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt; </p>
             <p>&lt;p&gt;I can't say. I don't know everyone.&lt;/p&gt;</p>
           </blockquote>
           <p style="color: darkred;">&lt;/main&gt;</p>
@@ -257,35 +236,23 @@
       </blockquote>
       <p>&lt;/html&gt;</p>
     </div>
-    <p>
-      Since pages are usually part of a site, there's likely going to be
+    <p> Since pages are usually part of a site, there's likely going to be
       something that contains stuff like the site title, the logo, and the main
-      navigation. That something will be the
-      <span
+      navigation. That something will be the <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;header&gt;</span
-      >
-      container.
-    </p>
-    <p>
-      It's not the same as the
-      <span
+      > container. </p>
+    <p> It's not the same as the <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;head&gt;</span
-      >.
-    </p>
-    <p>
-      It's in the
-      <span
+      >. </p>
+    <p> It's in the <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;body&gt;</span
-      >, but not inside the
-      <span
+      >, but not inside the <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;main&gt;</span
-      >
-      container.
-    </p>
+      > container. </p>
     <div
       style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
     >
@@ -310,13 +277,9 @@
           <p>&lt;main&gt;</p>
           <blockquote>
             <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
-            <p>
-              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
-            </p>
+            <p> &lt;p&gt;A heading should have some content after it.&lt;/p&gt; </p>
             <p>&lt;p&gt;Maybe some more content than that.&lt;/p&gt;</p>
-            <p>
-              &lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt;
-            </p>
+            <p> &lt;p&gt;How much is enough? Does anyone really know?&lt;/p&gt; </p>
             <p>&lt;p&gt;I can't say. I don't know everyone.&lt;/p&gt;</p>
           </blockquote>
           <p>&lt;/main&gt;</p>
@@ -325,36 +288,25 @@
       </blockquote>
       <p>&lt;/html&gt;</p>
     </div>
-    <p>
-      I happen to know that I want:
-    </p>
+    <p> I happen to know that I want: </p>
     <ul>
       <li>distinct styling for the 2nd paragraph,</li>
       <li>something else for the 4th paragraph, and</li>
-      <li>
-        something completely different for the second sentence in the third
-        paragraph.
-      </li>
+      <li> something completely different for the second sentence in the third
+        paragraph. </li>
     </ul>
     <p>I need to do something with the HTML so I can add styles later.</p>
-    <p>
-      Since the paragraphs are already contained in an HTML tag, I'm going to
-      give them a class name so I can refer to it later.
-    </p>
-    <p>
-      Since the second sentence in the third paragraph is not in a container,
+    <p> Since the paragraphs are already contained in an HTML tag, I'm going to
+      give them a class name so I can refer to it later. </p>
+    <p> Since the second sentence in the third paragraph is not in a container,
       I'm going to put it in one that I can refer to later. Since the sentence
-      doesn't start and stop on its own line, I'm going to use a
-      <span
+      doesn't start and stop on its own line, I'm going to use a <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;span&gt;</span
-      >
-      container. That's what you use for inline items. Otherwise I'd use a
-      <span
+      > container. That's what you use for inline items. Otherwise I'd use a <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;div&gt;</span
-      >.
-    </p>
+      >. </p>
     <div
       style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
     >
@@ -375,25 +327,15 @@
           <p>&lt;main&gt;</p>
           <blockquote>
             <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
-            <p>
-              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
-            </p>
-            <p>
-              &lt;p
-              <span style="color: darkred;">class="more-content"</span>&gt;Maybe
-              some more content than that.&lt;/p&gt;
-            </p>
-            <p>
-              &lt;p&gt;How much is enough?
-              <span style="color: darkred;">&lt;span class="who-knows"&gt;</span
+            <p> &lt;p&gt;A heading should have some content after it.&lt;/p&gt; </p>
+            <p> &lt;p <span style="color: darkred;">class="more-content"</span>&gt;Maybe
+              some more content than that.&lt;/p&gt; </p>
+            <p> &lt;p&gt;How much is enough? <span style="color: darkred;">&lt;span class="who-knows"&gt;</span
               >Does anyone really know?<span style="color: darkred;"
                 >&lt;/span&gt;</span
-              >&lt;/p&gt;
-            </p>
-            <p>
-              &lt;p <span style="color: darkred;">class="beats-me"</span>&gt;I
-              can't say. I don't know everyone.&lt;/p&gt;
-            </p>
+              >&lt;/p&gt; </p>
+            <p> &lt;p <span style="color: darkred;">class="beats-me"</span>&gt;I
+              can't say. I don't know everyone.&lt;/p&gt; </p>
           </blockquote>
           <p>&lt;/main&gt;</p>
         </blockquote>
@@ -402,42 +344,27 @@
       <p>&lt;/html&gt;</p>
     </div>
     <p>Are we done yet? Here's some stuff for later:</p>
-    <p>
-      Sitewide navigation will go inside that
-      <span
+    <p> Sitewide navigation will go inside that <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;header&gt;</span
-      >
-      container.
-    </p>
-    <p>
-      Inside the
-      <span
+      > container. </p>
+    <p> Inside the <span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
         >&lt;main&gt;</span
-      >
-      container, you can have multiple<span
+      > container, you can have multiple<span
         style="font-family: courier, 'courier new', fixed; font-weight: bold;"
-      >
-        &lt;section&gt;</span
-      >
-      containers, and other sectional elements as well. You can read more about
-      structural HTML (aka sectional elements) at
-      <a
+      > &lt;section&gt;</span
+      > containers, and other sectional elements as well. You can read more about
+      structural HTML (aka sectional elements) at <a
         href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines"
         target="_blank"
         rel="noopener"
         >https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines</a
-      >.
-    </p>
-    <p>
-      Meanwhile, let's be done with HTML for a while and switch to style. So,
-      the last thing we do to the HTML is to tell it where to go for style.
-    </p>
-    <p>
-      Let's also put a couple comments in the code to help document what we've
-      done.
-    </p>
+      >. </p>
+    <p> Meanwhile, let's be done with HTML for a while and switch to style. So,
+      the last thing we do to the HTML is to tell it where to go for style. </p>
+    <p> Let's also put a couple comments in the code to help document what we've
+      done. </p>
     <div
       style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
     >
@@ -450,13 +377,9 @@
           <div style="color: darkred;">
             <p>&lt;link rel="stylesheet" href="styles/style.css"&gt;</p>
             <p>&lt;!-- now it's time to go deal with CSS --&gt;</p>
-            <p>
-              &lt;!-- that's a comment that won't display on the page --&gt;
-            </p>
-            <p>
-              &lt;!-- comments start with a &lt; ! - - and they end with two
-              dashes and a &gt; --&gt;
-            </p>
+            <p> &lt;!-- that's a comment that won't display on the page --&gt; </p>
+            <p> &lt;!-- comments start with a &lt; ! - - and they end with two
+              dashes and a &gt; --&gt; </p>
           </div>
         </blockquote>
         <p>&lt;/head&gt;</p>
@@ -471,21 +394,13 @@
           <p>&lt;main&gt;</p>
           <blockquote>
             <p>&lt;h1&gt;Every page needs a top-level h1 heading&lt;/h1&gt;</p>
-            <p>
-              &lt;p&gt;A heading should have some content after it.&lt;/p&gt;
-            </p>
-            <p>
-              &lt;p class="more-content"&gt;Maybe some more content than
-              that.&lt;/p&gt;
-            </p>
-            <p>
-              &lt;p&gt;How much is enough? &lt;span class="who-knows"&gt;Does
-              anyone really know?&lt;/span&gt;&lt;/p&gt;
-            </p>
-            <p>
-              &lt;p class="beats-me"&gt;I can't say. I don't know
-              everyone.&lt;/p&gt;
-            </p>
+            <p> &lt;p&gt;A heading should have some content after it.&lt;/p&gt; </p>
+            <p> &lt;p class="more-content"&gt;Maybe some more content than
+              that.&lt;/p&gt; </p>
+            <p> &lt;p&gt;How much is enough? &lt;span class="who-knows"&gt;Does
+              anyone really know?&lt;/span&gt;&lt;/p&gt; </p>
+            <p> &lt;p class="beats-me"&gt;I can't say. I don't know
+              everyone.&lt;/p&gt; </p>
           </blockquote>
           <p>&lt;/main&gt;</p>
         </blockquote>
@@ -499,150 +414,131 @@
       style="font-family: courier, 'courier new', fixed; background-color: lightgray; padding: 10px;"
     >
       <p>/* CSS page */</p>
-      <p>
-        /* in a folder called styles, and named style.css, since that's how I
-        wrote the HTML */
-      </p>
-      <p>
-        /* Comments in CSS start with a slash and an asterisk, and end with an
-        asterisk and a slash */
-      </p>
-      <p>
-        /* We apply styles to HMTL tags by just putting the tag names here, no
-        &lt; or &gt; involved */
-      </p>
+      <p> /* in a folder called styles, and named style.css, since that's how I
+        wrote the HTML */ </p>
+      <p> /* Comments in CSS start with a slash and an asterisk, and end with an
+        asterisk and a slash */ </p>
+      <p> /* We apply styles to HMTL tags by just putting the tag names here, no
+        &lt; or &gt; involved */ </p>
       <p>body { color: darkslategray } /*font color */</p>
       <p>header { background-color: navy; color: white }</p>
-      <p>
-        .more-content { font-style: italic; color: navy } /* A class in HTML
-        starts with a dot in CSS */
-      </p>
+      <p> .more-content { font-style: italic; color: navy } /* A class in HTML
+        starts with a dot in CSS */ </p>
       <p>.who-knows { font-weight: bold; font-color: red }</p>
       <p>.beats-me { color: gray }</p>
     </div>
   </section>
-    <article>
-      <h1>Web development process</h1>
-      <p>
-        It differs depending on what I'm trying to do and what tools I am using,
-        but at its simplest I have just two tools: something to edit code, and a
-        web browser.
-      </p>
-      <ol>
-        <li>
-          <p>
-            I open both a code editor and a web browser: for example Visual
-            Studio Code and Google Chrome.
-          </p>
-          <p>
-            If the screen is big enough, I open them so I can see both at once
-            (see attached screen shot).
-          </p>
-        </li>
-        <li>
-          <p>
-            I will type out or paste in some code that has the basic structure I
-            need, like this:
-          </p>
-          <div
+  <article>
+    <h1>Web development process</h1>
+    <p> It differs depending on what I'm trying to do and what tools I am using,
+      but at its simplest I have just two tools: something to edit code, and a
+      web browser. </p>
+    <ol>
+      <li>
+        <p> I open both a code editor and a web browser: for example Visual
+          Studio Code and Google Chrome. </p>
+        <p> If the screen is big enough, I open them so I can see both at once
+          (see attached screen shot). </p>
+      </li>
+      <li>
+        <p> I will type out or paste in some code that has the basic structure I
+          need, like this: </p>
+        <div
             style="width: 80%; background-color: #cdcdcd; padding: 2em; font-family: monospace;"
-          >
-            &lt;html&gt;<br />&nbsp; &lt;head&gt;<br />&nbsp; &nbsp;&lt;link
-            rel="stylesheet" type="text/css" href="styles/style.css" /&gt;
-            <br />&nbsp; &nbsp; &lt;title&gt;Project Unicorn&lt;/title&gt;<br />&nbsp;
-            &lt;/head&gt;<br />&nbsp; &lt;body&gt;<br />&nbsp; &nbsp;
-            &lt;heading&gt;<br />&nbsp; &nbsp; &nbsp; &lt;h1&gt;Unicorns and
-            Zombies&lt;/h1&gt;<br />&nbsp; &nbsp; &lt;/heading&gt;<br />&nbsp;
-            &nbsp; &lt;main&gt;<br />&nbsp; &nbsp; &nbsp; &lt;section&gt;<br />&nbsp;
-            &nbsp; &nbsp; &nbsp; &lt;p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; Researchers disagree on which is more awesome: unicorns or
-            zombies.<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;<br />&nbsp;
-            &nbsp; &nbsp; &lt;/section&gt;<br />&nbsp; &nbsp; &lt;/main&gt;<br />&nbsp;
-            &lt;/body&gt;<br />&lt;/html&gt;
-          </div>
-        </li>
-        <li>
-          <p>I'll save that as a file whose filename ends in .html</p>
-        </li>
-        <li>
-          <p>
-            I will put the latest version of my working files into GitHub. This
-            includes folders, CSS files, images, etc.
-          </p>
-        </li>
-        <li>
-          <p>
-            I will open my HTML page (the copy on my computer, not the copy on
-            github.io--so I can edit and review quickly) in the web browser to
-            see if it looks right.
-          </p>
-        </li>
-        <li>
-          <p>If it doesn't look right:</p>
-          <ol>
-            <li>
-              <p>I will look at my code to see if I can find a mistake.</p>
-              <ul>
-                <li>
-                  <p>
-                    If I change my code, I will save it in the editor, and click
-                    refresh in the browser to see if that fixed it.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                If I don't see anything obvious, I will paste the code into the
-                validator at
-                <a
+          > &lt;html&gt;<br />
+          &nbsp; &lt;head&gt;<br />
+          &nbsp; &nbsp;&lt;link
+          rel="stylesheet" type="text/css" href="styles/style.css" /&gt; <br />
+          &nbsp; &nbsp; &lt;title&gt;Project Unicorn&lt;/title&gt;<br />
+          &nbsp;
+          &lt;/head&gt;<br />
+          &nbsp; &lt;body&gt;<br />
+          &nbsp; &nbsp;
+          &lt;heading&gt;<br />
+          &nbsp; &nbsp; &nbsp; &lt;h1&gt;Unicorns and
+          Zombies&lt;/h1&gt;<br />
+          &nbsp; &nbsp; &lt;/heading&gt;<br />
+          &nbsp;
+          &nbsp; &lt;main&gt;<br />
+          &nbsp; &nbsp; &nbsp; &lt;section&gt;<br />
+          &nbsp;
+          &nbsp; &nbsp; &nbsp; &lt;p&gt;<br />
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; Researchers disagree on which is more awesome: unicorns or
+          zombies.<br />
+          &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;<br />
+          &nbsp;
+          &nbsp; &nbsp; &lt;/section&gt;<br />
+          &nbsp; &nbsp; &lt;/main&gt;<br />
+          &nbsp;
+          &lt;/body&gt;<br />
+          &lt;/html&gt; </div>
+      </li>
+      <li>
+        <p>I'll save that as a file whose filename ends in .html</p>
+      </li>
+      <li>
+        <p> I will put the latest version of my working files into GitHub. This
+          includes folders, CSS files, images, etc. </p>
+      </li>
+      <li>
+        <p> I will open my HTML page (the copy on my computer, not the copy on
+          github.io--so I can edit and review quickly) in the web browser to
+          see if it looks right. </p>
+      </li>
+      <li>
+        <p>If it doesn't look right:</p>
+        <ol>
+          <li>
+            <p>I will look at my code to see if I can find a mistake.</p>
+            <ul>
+              <li>
+                <p> If I change my code, I will save it in the editor, and click
+                  refresh in the browser to see if that fixed it. </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p> If I don't see anything obvious, I will paste the code into the
+              validator at <a
                   href="https://validator.w3.org"
                   target="_blank"
                   rel="noopener"
                   >https://validator.w3.org</a
-                >
-                and see if it tells me anything helpful.
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    If I change my code, I will save it in the editor, and click
-                    refresh in the browser to see if that fixed it.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                If I still can't find what's wrong, I will send the GitHub link
-                to someone else to see if they can see the issue.
-              </p>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <p>
-            If it does look right, I will look at the page on GitHub.io to make
-            sure it looks right there as well.
-          </p>
-        </li>
-        <li>
-          <p>If it doesn't look right, I will loop back to step 6 above.</p>
-        </li>
-        <li>
-          <p>
-            If it does look right, I will add more to the code: perhaps a new
-            section, another heading or paragraph, an image, or some changes to
-            the style.css page.
-          </p>
-        </li>
-        <li>
-          <p>In the editor, I will click "save" to save the code.</p>
-        </li>
-        <li>
-          <p>I will loop back to step 4 above.</p>
-        </li>
-      </ol>
-    </article>
-  </body>
+                > and see if it tells me anything helpful. </p>
+            <ul>
+              <li>
+                <p> If I change my code, I will save it in the editor, and click
+                  refresh in the browser to see if that fixed it. </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p> If I still can't find what's wrong, I will send the GitHub link
+              to someone else to see if they can see the issue. </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p> If it does look right, I will look at the page on GitHub.io to make
+          sure it looks right there as well. </p>
+      </li>
+      <li>
+        <p>If it doesn't look right, I will loop back to step 6 above.</p>
+      </li>
+      <li>
+        <p> If it does look right, I will add more to the code: perhaps a new
+          section, another heading or paragraph, an image, or some changes to
+          the style.css page. </p>
+      </li>
+      <li>
+        <p>In the editor, I will click "save" to save the code.</p>
+      </li>
+      <li>
+        <p>I will loop back to step 4 above.</p>
+      </li>
+    </ol>
+  </article>
+</main>
+</body>
 </html>

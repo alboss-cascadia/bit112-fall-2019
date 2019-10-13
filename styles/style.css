@@ -64,6 +64,7 @@ header nav ul li a:active {
 }
 main {
   padding: 10px;
+  max-width: 1000px;
 }
 #ref-links li {
   line-height: 1.7rem;
