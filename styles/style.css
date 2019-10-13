@@ -44,8 +44,6 @@ header nav ul li a {
   /* reference: https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
   margin-right: -4px;
 }
-header nav ul li.disabled {
-}
 header nav ul li.disabled a {
   padding: 20px;
   cursor: not-allowed;
@@ -66,4 +64,7 @@ header nav ul li a:active {
 }
 main {
   padding: 10px;
+}
+#ref-links li {
+  line-height: 1.7rem;
 }
