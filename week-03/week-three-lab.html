@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <title>Week three lab</title>
+    <style>
+      section { border-bottom: 1px solid #333333;}
+      header { border-bottom: 3px solid #999999; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Week three lab</h1>
+      <p>This lab will apply CSS from the week three reading and videos to your own web pages from assignment one.</p>        
+    </header>
+    <main>
+      <section>
+        <h2>Images</h2>
+        <p>From <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML</a>:</p>
+        <ol>
+        <li>
+        <p>In your HTML from assignment one, wrap each <strong><span style="font-family: courier, 'courier new', monospace;">&lt;img&gt;</span></strong> inside a <strong><span style="font-family: courier, 'courier new', monospace;">&lt;figure&gt;</span></strong> container.</p>
+        </li>
+        <li>
+        <p>Add a <strong><span style="font-family: courier, 'courier new', monospace;">&lt;figcaption&gt;</span></strong> container and a caption inside the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;figure&gt;</span></strong> container after the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;img&gt;</span></strong>.</p>
+        <p>Note that the alt text and the caption should not say the same thing.</p>
+        </li>
+        </ol>
+        <p>The result should look something like this:</p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;figure&gt;</span></strong></p>
+        <blockquote>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;img src="images/cobalt-hair.jpg" alt="I got a bright blue mohawk haircut for church choir"&gt;</span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;figcaption&gt;I was trying to get out of having to participate in choir.&lt;/figcaption&gt;</span></strong></p>
+        </blockquote>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;/figure&gt;</span></strong></p>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <hr />
+        <p>From <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals</a>:</p>
+        <p><strong>Make these changes to your linked CSS:</strong></p>
+        <ol>
+        <li>
+        <p>Add a default <strong>font stack</strong> (a <strong><span style="font-family: courier, 'courier new', monospace;">font-family</span></strong> value consisting of multiple font names separated by commas) for the whole site, by assigning the rule to the <strong><span style="font-family: courier, 'courier new', monospace;">html</span></strong> tag.</p>
+        </li>
+        <li>
+        <p>Set a default base <strong><span style="font-family: courier, 'courier new', monospace;">font-size</span></strong> of 10px for the <strong><span style="font-family: courier, 'courier new', monospace;">html</span></strong> tag.</p>
+        <ul>
+        <li>
+        <p>10px is too small to be useful, but we are using it as the base because it's really easy to do math on.</p>
+        </li>
+        <li>
+        <p>For all other font sizes, we will use relative ems (<strong><span style="font-family: courier, 'courier new', monospace;">rem</span></strong>), which are computed from the base font-size.</p>
+        </li>
+        <li>
+        <p><em>Why don't we just set all font sizes in pixel sizes?</em><br />By using rem, we can just change the base font-size and automatically change all font sizes in a website.</p>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <p>Set the <strong><span style="font-family: courier, 'courier new', monospace;">font-size</span></strong> for <strong><span style="font-family: courier, 'courier new', monospace;">p</span></strong> and <strong><span style="font-family: courier, 'courier new', monospace;">li</span></strong> to 1.2em and see how it looks. (Probably too small). Try 1.4em. Keep adjusting till it looks the way you want.</p>
+        </li>
+        <li>
+        <p>Set the <strong><span style="font-family: courier, 'courier new', monospace;">font-size</span></strong> for <strong><span style="font-family: courier, 'courier new', monospace;">h1</span></strong> to 2.3em and see how it looks. (Probably too small). Try 2.4em. Keep adjusting till it looks the way you want.</p>
+        </li>
+        <li>
+        <p>Set the <strong><span style="font-family: courier, 'courier new', monospace;">font-size</span></strong> for <strong><span style="font-family: courier, 'courier new', monospace;">h2</span></strong> to 2em and see how it looks. (Probably too small). Try 2.1em. Keep adjusting till it looks the way you want.</p>
+        </li>
+        <li>
+        <p>Set the <strong><span style="font-family: courier, 'courier new', monospace;">line-height</span></strong> on <strong><span style="font-family: courier, 'courier new', monospace;">li</span></strong></p>
+        </li>
+        </ol>
+        <p>Do more if you like. At a minimum, the result should look something like this:</p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;"> html { font-size: 10px; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">h1 { font-size: 2.6rem; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">p, li { font-size: 1.4rem; font-family: Helvetica, Arial, sans-serif; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">li { line-height: 1.5; } </span></strong></p>
+    </section>
+    <section>
+        <p>From <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started</a>:</p>
+        <p><strong>Change how hyperlinks display, by making these changes to your linked CSS:</strong></p>
+        <p>You can use the site at <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" rel="noopener">https://www.w3schools.com/colors/colors_picker.asp</a> to pick some colors.</p>
+        <ol>
+        <li>
+        <p>Change the color for an unvisited link (<strong><span style="font-family: courier, 'courier new', monospace;">a:link</span></strong>).</p>
+        </li>
+        <li>
+        <p>Change the color for a visited link.</p>
+        </li>
+        <li>
+        <p>Change the CSS so when you mouse over a link, the background color and the link color both change, and the underline disappears.</p>
+        </li>
+        <li>
+        <p>Change the CSS so when you click a link, the background color and the link color reverse, and the underline disappears. (<strong><span style="font-family: courier, 'courier new', monospace;">a:active</span></strong>)</p>
+        </li>
+        <li>
+        <p>For the <strong><span style="font-family: courier, 'courier new', monospace;">header</span></strong> and <strong><span style="font-family: courier, 'courier new', monospace;">main</span></strong> elements, add 2.5rem (which adds up to 25px) padding so the text isn't sitting directly against the side of the page.</p>
+        </li>
+        </ol>
+        <p>Do more if you like. At a minimum, the CSS should now look something like this:</p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;"> html { <br>
+          font-size: 10px; <br>
+          font-size: 1.4rem; <br>
+          font-family: Helvetica, Arial, sans-serif; <br>
+        } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">header, main { padding: 2.5rem; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">h1 { font-size: 2.6rem; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">li { line-height: 1.5; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">a:link { color: #e60000; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">a:visited { color: #990073; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">a:hover { color: #cc3300; background-color: #ebebe0; text-decoration: none; } </span></strong></p>
+        <p><strong><span style="font-family: courier, 'courier new', monospace;">a:active { color: #ebebe0; background-color: #cc3300; text-decoration: none; } </span></strong></p>
+    </section>
+    <section>
+        <p>From <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured</a>:</p>
+        <p>Border styles: <a href="https://www.w3schools.com/css/css_border.asp" target="_blank" rel="noopener">https://www.w3schools.com/css/css_border.asp</a></p>
+        <p>Colors: <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" rel="noopener">https://www.w3schools.com/colors/colors_picker.asp</a> </p>
+        <p><strong>Make these updates to your linked CSS:</strong></p>
+        <ol>
+        <li>
+        <p>For the <strong><span style="font-family: courier, 'courier new', monospace;">header</span></strong> element, set a <strong><span style="font-family: courier, 'courier new', monospace;">background-color</span></strong> and a <strong><span style="font-family: courier, 'courier new', monospace;">color</span></strong> for the text.</p>
+        </li>
+        <li>
+        <p>For the <strong><span style="font-family: courier, 'courier new', monospace;">header</span></strong> element, add a <strong><span style="font-family: courier, 'courier new', monospace;">border-bottom</span></strong> that matches the text color. Start by making the border .3rem and solid, and adjust it till you like it.</p>
+        </li>
+        <li>
+        <p>For the elements inside the header, most likely an <strong><span style="font-family: courier, 'courier new', monospace;">h1</span></strong> and maybe an <strong><span style="font-family: courier, 'courier new', monospace;">h2</span></strong> or a <strong><span style="font-family: courier, 'courier new', monospace;">p</span></strong>, set the <strong><span style="font-family: courier, 'courier new', monospace;">line-height</span></strong> and anything else you might like, such as <strong><span style="font-family: courier, 'courier new', monospace;">text-align</span></strong> or <strong><span style="font-family: courier, 'courier new', monospace;">padding</span></strong>.</p>
+        </li>
+        <li>
+        <p>Set a <strong><span style="font-family: courier, 'courier new', monospace;">max-width</span></strong> for the <strong><span style="font-family: courier, 'courier new', monospace;">main</span></strong> element, so it doesn't go on forever</p>
+        </li>
+        <li>
+        <p>Add comments to your CSS to explain what the different parts do.</p>
+        </li>
+        </ol>
+        <p>Do more if you like. At a minimum, the CSS should now look like your own work and not like you copied and pasted my example. In other words, I'm not providing you an example for this part.</p>
+        <hr />
+        <p>Upload your completed work to GitHub.</p>
+        <p>Once uploaded, be sure to <a class="external" href="http://validator.w3.org/unicorn/" target="_blank" rel="noopener">validate your pages</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>

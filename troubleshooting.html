@@ -132,6 +132,105 @@
           does happen it's inconvenient.
         </p>
       </section>
+      <section>
+        <h2>How does the <i>em</i> or <i>rem</i> work?</h2>
+        <p>
+          An em is the width of the widest character in the charset, which in
+          our alphabet is the <strong>M</strong>.
+        </p>
+        <p>
+          If you don't specify any absolute values (px, pt, in, etc.) then it
+          will work off the defaults that are set in the browser. This is
+          awesome for accessibility because it means if I have set my base font
+          size to be 24px instead of 14px, the headings will resize in
+          proportion to my default, rather than whatever arbitrary size some
+          designer picked that's always way too small for me to see.
+        </p>
+        <p>
+          This is terrible for designers because they don't like giving that
+          much control to users. They set the design to work within certain
+          constraints, and if people override those constraints you get
+          unexpected results, like text that is bigger than the box that is
+          supposed to contain it, or things that don't print out right, or
+          buttons that don't line up with their labels.
+        </p>
+        <p>
+          Usability/accessibility people and designers should never date. It
+          doesn't end well.
+        </p>
+        <p>
+          To make the math easy in my example here, I'll say I've set the
+          default to be 10px.
+        </p>
+        <p
+          style="font-family: courier, 'courier new', monospace; font-weight: bold"
+        >
+          html { font-size: 10px }
+        </p>
+        <p>Therefore 1em is 10px.</p>
+        <p>
+          Here's where it gets tricky. With rem, I set the default for the html
+          element to 10px and everything will be relative to that. The rem is
+          always based on the root element of the document, which is the html
+          element. So if I say
+        </p>
+        <p
+          style="font-family: courier, 'courier new', monospace; font-weight: bold"
+        >
+          h1 { font-size: 3.6rem }
+        </p>
+        <p>
+          that's 3.6 x 10px, or 36px. Rem is super-easy for figuring out
+          font-size, and if you change the font-size of the the root element,
+          you just changed it for the whole document because it's all
+          multiplying off that.
+        </p>
+        <p>The em is slightly different for one practical reason.</p>
+        <p>
+          Em inherits from its parent element. It will work exactly like rem
+          until you override something. Let's say I set
+        </p>
+        <p
+          style="font-family: courier, 'courier new', monospace; font-weight: bold"
+        >
+          html { font-size: 10px }<br />
+          h1 { font-size: 3.6em }
+        </p>
+        <p>but then I set</p>
+        <p
+          style="font-family: courier, 'courier new', monospace; font-weight: bold"
+        >
+          aside { font-size: 20px }
+        </p>
+        <p>My html will turn out kind of like this:</p>
+        <p
+          style="font-family: courier, 'courier new', monospace; font-weight: bold"
+        >
+          &lt;html&gt;<br />
+          &lt;body&gt;<br />
+          &lt;h1&gt;36px&lt;/h1&gt;<br />
+          &lt;p&gt;10px&lt;/p&gt;<br />
+          &lt;aside&gt;<br />
+          &lt;h1&gt;72px because it's 3.6x the parent element, which is aside,
+          which is 20px&lt;/h1&gt;<br />
+          &lt;p&gt;20px&lt;/p&gt;<br />
+          &lt;/aside&gt;<br />
+          &lt;p&gt;Back to 10px&lt;/p&gt;<br />
+          &lt;/body&gt;<br />
+          &lt;/html&gt;
+        </p>
+        <p>
+          There's a fairly understandable article on this admittedly abstract
+          concept, at
+          <a
+            href="https://j.eremy.net/confused-about-rem-and-em/"
+            target="_blank"
+            >https://j.eremy.net/confused-about-rem-and-em/</a
+          >. I'm not sure I agree with his conclusion, but his explanations are
+          good, and the part called Save Lives with EM is a great example of why
+          we use em and rem instead of px.
+        </p>
+      </section>
     </main>
   </body>
 </html>
