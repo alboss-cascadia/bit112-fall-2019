@@ -20,6 +20,10 @@ header h2 {
 header h1 {
   padding-top: 20px;
 }
+header h1 a {
+  text-decoration; none;
+  color: #cccccc;
+}
 header h2 {
   padding-bottom: 10px;
 }
