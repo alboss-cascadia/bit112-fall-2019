@@ -1,0 +1,260 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <title>Week four lab</title>
+    <style>
+            section { border-bottom: 1px solid #333333;}
+            header { border-bottom: 3px solid #999999; }
+          </style>
+  </head>
+  <body>
+    <header>
+      <h1>Week four lab</h1>
+    </header>
+    <main>
+            <p>This lab will apply CSS from the week four reading and videos to your own web pages from assignment one.</p>
+     <section>
+ 
+            <h2>HTML</h2>
+            <ol>
+                <li>
+                    <p>Create a new folder called weeks-1-3, and copy your existing code into that. This folder will have your CSS
+                        and images from weeks 1-3.</p>
+                </li>
+                <li>
+                    <p>Create a new folder called week-four and copy your existing code into that. This folder will have the CSS and
+                        images you're updating for week four.</p>
+                </li>
+                <li>
+                    <p>From now on, at the start of each week, make a new folder, copy the previous week's content into that, and do
+                        your work for the new week in the new folder.</p>
+                </li>
+                <li>
+                    <p>On your site root index.html:</p>
+                    <ol>
+                        <li>
+                            <p>Clear out everything between &lt;main&gt; and &lt;/main&gt;.</p>
+                        </li>
+                        <li>
+                            <p>Inside the &lt;header&gt; container (not the &lt;head&gt; container), add this:<br><br>
+                                <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;<br>&lt;ul&gt;<br>
+                                        &lt;li&gt;&lt;a href="weeks-1-3/index.html"&gt;Weeks 1-3&lt;/&gt;&lt;/li&gt;<br>
+                                        &lt;li&gt;&lt;a href="week-4/index.html"&gt;Week 4&lt;/a&gt;&lt;/li&gt;<br>
+                                        &lt;/ul&gt;<br>
+                                        &lt;/nav&gt;</span></strong></p>
+                        <li>
+                            <p>Open that in the web browser and make sure the links work.</p>
+                        </li>
+                        <li>
+                            <p>From now on, for each week, add a link to the new week's folder and make sure the links work.</p>
+                        </li>
+                        <li>
+                            <p>Inside the &lt;main&gt; container on the main index.html page, a &lt;section&gt; container.</p>
+                        </li>
+                        <li>
+                            <p>Inside the section, add a paragraph that says this site will trace the evolution of what you're
+                                learning in the Web authoring class. That's mostly a placeholder, so feel free to expand on that to
+                                make it more interesting.</p>
+                        </li>
+                        <li>
+                            <p>Just before the closing &lt;body&gt; tag, add a &lt;footer&gt;&lt;/footer&gt; container.</p>
+                        </li>
+                        <li>
+                            <p>Inside the footer container, add a paragraph that contains the &amp;copy; and your name. You can put
+                                more in here if you like.</p>
+                        </li>
+                        <li>
+                            <p>Copy the &lt;footer&gt; container from the main index page.</p>
+                        </li>
+                        <li>
+                            <p>In the week-4 folder, paste the footer container into both the index.html and the about-me.html
+                                pages.</p>
+                        </li>
+                        <li>
+                            <p>In the footer on the week-four/index.html page, hyperlink your name to the about-me page in that
+                                folder.</p>
+                        </li>
+                        <li>
+                            <p>Inside the &lt;main&gt; container on each page in the week-four folder, add at least one &lt;section&gt; container and move the HTML that's in the &lt;main&gt; into that &lt;section&gt; container.<br /><br />Old: <strong><span style="font-family: courier, 'courier new', monospace;">&lt;main&gt; (lots of html) &lt;/main&gt;<br /></span></strong><br />New:<strong><span style="font-family: courier, 'courier new', monospace;">&lt;main&gt;&lt;section&gt;(lots of html)&lt;/section&gt;&lt;/main&gt;</span></strong></p>
+                            </li>
+                            <li>
+                            <p>If you have content on this page that should be in its own section, make another section and put it there. Repeat until the structure makes sense.</p>
+                            <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;main&gt;</span></strong></p>
+                            <p style="padding-left: 40px;"><strong><span style="font-family: courier, 'courier new', monospace;">&lt;section&gt;</span></strong></p>
+                            <p style="padding-left: 80px;"><strong><span style="font-family: courier, 'courier new', monospace;">(lots of html about my childhood)</span></strong></p>
+                            <p style="padding-left: 40px;"><strong><span style="font-family: courier, 'courier new', monospace;">&lt;/section&gt;</span></strong></p>
+                            <p style="padding-left: 40px;"><strong><span style="font-family: courier, 'courier new', monospace;">&lt;section&gt;</span></strong></p>
+                            <p style="padding-left: 80px;"><strong><span style="font-family: courier, 'courier new', monospace;">(lots of html about my job)</span></strong></p>
+                            <p style="padding-left: 40px;"><strong><span style="font-family: courier, 'courier new', monospace;">&lt;/section&gt;</span></strong></p>
+                            <p style="padding-left: 40px;"><strong><span style="font-family: courier, 'courier new', monospace;">&lt;section&gt;</span></strong></p>
+                            <p style="padding-left: 80px;"><strong><span style="font-family: courier, 'courier new', monospace;">(lots of html about wine)</span></strong></p>
+                            <p style="padding-left: 40px;"><strong><span style="font-family: courier, 'courier new', monospace;">&lt;/section&gt;</span></strong></p>
+                            <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;/main&gt;</span></strong></p>
+                            </li>
+                        <li>
+                            <p>On the about-me.html page, create an &lt;aside&gt; container.</p>
+                        </li>
+                        <li>
+                            <p>Move the heading and &lt;ul&gt; list of your classes into the &lt;aside&gt; container.</p>
+                        </li>
+                        <li>
+                            <p>That's the minimum for HTML changes. Feel free to add more structural HTML elements, like an
+                                &lt;article&gt; or two, or additional &lt;aside&gt; or &lt;section&gt; containers.
+                    </ol>
+                    </section>
+                    <section>
+                        <h2>CSS</h2>
+                        <p>From <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+                                target="_blank" rel="noopener">The box model</a> and <a
+                                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders"
+                                target="_blank" rel="noopener">Backgrounds and borders</a>:</p>
+                        <p><strong>Make these changes to your linked CSS:</strong></p>
+                        <ol>
+                            <li>
+                                <p>In the /styles/ folder off your main root, open style.css and modify the looks of your main
+                                    index.html page. This page will look different from your week-by-week portfolio pages, so use
+                                    different colors, fonts, or anything else that suits you.</p>
+                                <ol>
+                                    <li>
+                                        <p>Dress up the header some. Color, padding, background-color, whatever.</p>
+                                    </li>
+                                    <li>
+                                        <p>For the <b>header nav ul</b> and <b>header nav ul li</b>, turn it into a horizontal
+                                            navigation bar by following the guidance under <i>Horizontal Navigation Bar Examples</i>
+                                            on <a href="https://www.w3schools.com/css/css_navbar.asp"
+                                                target="_blank">https://www.w3schools.com/css/css_navbar.asp</a>.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Create styles for the main page's footer: text, color, and padding, at a minimum.</p>
+                            </li>
+                            <li>
+                                <p>Create styles for section containers that will be on your main page: text, color, and padding, at
+                                    a minimum.</p>
+                            </li>
+                            <li>
+                                <p>Now go into the style/style.css that's in the week-4 folder.</p>
+                                <ol>
+                                    <li>
+                                        <p>Format the header styles, making them different from the ones you did on the main page.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Format the footer styles, making them different from the ones you did on the main page.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Format the section styles, making them different from the ones you did on the main page.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Create styles for the rest of the containers you have in the week-4 folder, which will be
+                                            an &lt;aside&gt; container at the very least. Give it a border, adjust the font-size so
+                                            it's not the same as what's in a section, maybe give it a slight change in
+                                            background-color or color, at a minimum.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Add comments to your CSS to explain what the different parts do.</p>
+                            </li>
+                        </ol>
+            
+                    </section>
+                    <section>
+                        <h2>Images</h2>
+                        <p>From <a
+                                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+                                target="_blank"
+                                rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images</a>:
+                        </p>
+                        <ol>
+                            <li>
+                                <p>Go to <a href="https://picresize.com" target="_blank">https://picresize.com</a>.</p>
+                            </li>
+                            <li>If the image you used on your website is under 1200px wide, go find another one that is at least
+                                1200px wide. Given the insane resolution of modern cellphone cameras, this should not be difficult.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Create a copy of your image, at each of these sizes:</p>
+                                <ul>
+                                    <li>320px wide</li>
+                                    <li>480px wide</li>
+                                    <li>800px wide</li>
+                                    <li>1200px wide</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Save these images in the images folder in your new week-4 folder</p>
+                            </li>
+            
+                            <li>
+                                <p>In your HTML in the week-4 folder, follow the example at <a
+                                        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+                                        target="_blank"
+                                        rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images</a>,
+                                    under <i>Resolution switching: Different sizes</i>. Inside the <strong><span
+                                            style="font-family: courier, 'courier new', monospace;">&lt;img&gt;</span></strong>
+                                    container, add <strong><span
+                                            style="font-family: courier, 'courier new', monospace;">srcset</span></strong> and
+                                    <strong><span style="font-family: courier, 'courier new', monospace;">sizes</span></strong> for
+                                    the new images.</p>
+                            </li>
+                            <li>
+                                <p>Remember to add one for the 1200px image as well; that's not in the example.</p>
+                            </li>
+            
+                        </ol>
+                        <p>The result should look something like this:</p>
+                        <div style="font-family: courier, 'courier new', monospace; font-weight: bold">
+                            <p>&lt;figure&gt;</p>
+                            <div style="padding-left: 40px;">
+                                <p>&lt;img srcset="images/cobalt-hair-320w.jpg 320w,</p>
+                                <p style="padding-left: 40px;">
+                                    images/cobalt-hair-480w.jpg 480w,<br>
+                                    images/cobalt-hair-800w.jpg 800w,<br>
+                                    images/cobalt-hair-1200w.jpg 1200w"</p>
+                                sizes="(max-width: 480px) 280px,</p>
+                                <p style="padding-left: 40px;">(max-width: 800px) 440px,<br>
+                                    (max-width: 1199px) 760px,<br>
+                                    1200px"</p>
+                                src="images/cobalt-hair.jpg" <br>
+                                alt="I got a bright blue mohawk haircut for church choir"&gt;</p>
+            
+                                <p>&lt;figcaption&gt;I was trying to get out of having to participate in choir.&lt;/figcaption&gt;
+                                </p>
+                            </div>
+                            <p>&lt;/figure&gt;</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Accessibility</h2>
+                        <ol>
+                            <li>
+                                <p>Install the <a href="https://accessibilityinsights.io/docs/en/web/overview"
+                                        target="_blank">Accessibility Insights extension</a> for Chrome or Firefox.</p>
+                            </li>
+                            <li>
+                                <p>Check your pages.</p>
+                                <ol>
+                                    <li>
+                                        <p>Fix what you can figure out</p>
+                                    </li>
+                                    <li>
+                                        <p>Ask for help on Slack for anything you can't figure out.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <hr>
+                            <p>Upload your completed work to GitHub.</p>
+                            <p>Once uploaded, be sure to <a class="external" href="http://validator.w3.org/" target="_blank"
+                                    rel="noopener">validate your pages</a>.</p>
+                            <p>Once validated, do one more <a href="https://wave.webaim.org/extension/">accessibility check</a>,
+                                this time via the WAVE evaluation tool from Web AIM.</p>
+      </section>
+    </main>
+  </body>
+</html>
