@@ -2,11 +2,20 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <meta charset="utf-8" />
-    <title>Troubleshooting</title>
+    <title>Tips and Troubleshooting</title>
+    <style>
+      section {
+        border-top: 1px solid #c2bfbf;
+        padding: 2em;
+      }
+      main nav {
+        padding: 2em;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Troubleshooting</h1>
+      <h1>Tips and Troubleshooting</h1>
       <nav>
         <ul>
           <li><a href="index.html">Main page</a></li>
@@ -14,7 +23,10 @@
       </nav>
     </header>
     <main>
-      <section>
+      <!--empty list that will be populated by Javascript to create page navigation-->
+      <nav><ul id="section-list"></ul></nav>
+      <!--topics-->
+      <section id="extensions">
         <h2>Make sure file extensions are visible</h2>
         <p>
           Unless you’ve forced it to behave, your operating system is lying to
@@ -52,7 +64,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="step-away">
         <h2>Step away from the screen</h2>
         <p>
           The two smartest things you can do when troubleshooting and getting
@@ -75,7 +87,7 @@
           )
         </p>
       </section>
-      <section>
+      <section id="cache">
         <h2>Cache</h2>
         <p>
           Bowsers store a temporary copy, or cache, of pages you've visited
@@ -86,7 +98,7 @@
         </p>
         <p><a href="https://kb.iu.edu/d/ahic">https://kb.iu.edu/d/ahic</a></p>
       </section>
-      <section>
+      <section id="console">
         <h2>Console error messages</h2>
         <p>
           All the browsers handle errors differently. Most of them will
@@ -132,7 +144,7 @@
           does happen it's inconvenient.
         </p>
       </section>
-      <section>
+      <section id="em">
         <h2>How does the <i>em</i> or <i>rem</i> work?</h2>
         <p>
           An em is the width of the widest character in the charset, which in
@@ -231,6 +243,66 @@
           we use em and rem instead of px.
         </p>
       </section>
+      <section id="a11y">
+        <h2>Accessibility</h2>
+        <h3>Color contrast</h3>
+        <ul>
+          <li>
+            <p>
+              <a
+                href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"
+                target="_blank"
+                >https://dequeuniversity.com/rules/axe/3.2/color-contrast</a
+              >
+              lets you input your color choices and see if they meet standards.
+            </p>
+          </li>
+          <li>
+            <p>
+              <a
+                href="https://www.toptal.com/designers/colorfilter/"
+                target="_blank"
+                >https://www.toptal.com/designers/colorfilter/</a
+              >
+              lets you see what your page looks like with various color
+              blindnesses.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="semantic">
+        <h2>Semantic HTML</h2>
+        <p>
+          Here's a great graphical representation of semantic HTML:
+          <a
+            href="https://www.semrush.com/blog/semantic-html5-guide/"
+            target="_blank"
+            >https://www.semrush.com/blog/semantic-html5-guide/</a
+          >
+        </p>
+      </section>
     </main>
+    <script>
+      // script to automatically build navigation to each topic on the page
+      // get a list of all the <h2>s
+      var items = document.getElementsByTagName("h2");
+      // identify the ID for where this navigation will go
+      var sectionList = document.getElementById("section-list");
+      // make a counter
+      var i;
+      // loop through all the <h2>s we collected
+      for (i = 0; i < items.length; i++) {
+        // build a list item and a link to go to each <h2> we found
+        sectionList.innerHTML =
+          sectionList.innerHTML +
+          '<li><p><a href="#' +
+          // link to the ID for the section that the <h2> is in
+          items[i].parentElement.id +
+          '">' +
+          // use the text from the <h2> for the link text
+          items[i].textContent +
+          "</a></p></li>";
+      }
+    </script>
   </body>
 </html>

@@ -2,12 +2,15 @@
 html {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
 }
 body {
   /* make the elements go all the way to the border of the page */
   margin: 0px;
+  height: 100%;
 }
-header {
+header,
+footer {
   background-color: #520202;
   /* space between the edge of the header and the contents inside it */
 }
@@ -27,16 +30,20 @@ header h1 a {
 header h2 {
   padding-bottom: 10px;
 }
+
+/* Responsive navigation */
+
 header nav {
   padding: 5px;
   margin: 0px;
   background-color: #333333;
+  overflow: auto;
 }
 header nav ul {
   list-style-type: none;
 }
 header nav ul li {
-  display: inline;
+  display: inline-block;
   color: #cccccc;
   margin: auto;
 }
@@ -66,6 +73,53 @@ header nav ul li a:active {
   color: #000000;
   background-color: #ffffff;
 }
+/* For landscape tablets and laptops */
+@media screen and (min-width: 601px) and (max-width: 1099px) {
+  header nav ul li.menu-title {
+    width: 100%;
+    display: block;
+  }
+  header nav ul li {
+    width: 15%;
+    float: left;
+    padding: 3px;
+  }
+  header nav ul li a {
+    padding: 0.5em;
+    float: left;
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  header nav ul li.disabled {
+    display: none;
+  }
+}
+/* For portrait tablets and phones */
+@media screen and (max-width: 600px) {
+  header nav ul li.menu-title {
+    width: 100%;
+    display: block;
+  }
+  header nav ul li {
+    width: 30%;
+    float: left;
+    padding: 3px;
+  }
+  header nav ul li a {
+    padding: 0.5em;
+    float: left;
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  header nav ul li.disabled {
+    display: none;
+  }
+}
+
+/* Done with navigation, finally */
+
 main {
   padding: 10px;
   max-width: 1000px;
@@ -75,4 +129,17 @@ main {
 }
 #ref-links li {
   line-height: 1.7rem;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -1.5em;
+}
+footer {
+  padding: 10px;
+  font-size: 0.8em;
+  color: #cccccc;
+  height: 1.5em;
+}
+footer a {
+  color: #cccccc;
 }
