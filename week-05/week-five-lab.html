@@ -1,0 +1,376 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <meta charset="utf-8" />
+    <title>Week four lab</title>
+    <style>
+      section {
+        border-bottom: 1px solid #333333;
+      }
+      header {
+        border-bottom: 3px solid #999999;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Week five lab</h1>
+    </header>
+    <main>
+      <p>
+        This lab will apply CSS from the week five reading and videos to your
+        own web pages from assignment one.
+      </p>
+      <section>
+        <h2>HTML</h2>
+        <ol>
+          <li>
+            <p>
+              If you haven't already done so, add a new tag in the
+              <strong
+                ><span style="font-family: courier, 'courier new', monospace;"
+                  >&lt;head&gt;</span
+                ></strong
+              >
+              container on all your pages.
+            </p>
+            <p>
+              <strong
+                ><span style="font-family: courier, 'courier new', monospace;"
+                  >&lt;meta&nbsp;name="viewport"&nbsp;content="width=device-width"&nbsp;/&gt;</span
+                ></strong
+              >
+            </p>
+            <p>
+              This will keep browsers from lying about the size of the window.
+            </p>
+          </li>
+          <li>
+            <p>
+              Create a new folder called week-5, and copy everything from week-4
+              into that. This new folder should now have your completed HTML,
+              CSS and images from week 4, so you can update it for week 5.
+            </p>
+          </li>
+          <li>
+            <p>On your site root index.html:</p>
+            <p>
+              Inside the
+              <strong
+                ><span style="font-family: courier, 'courier new', monospace;"
+                  >&lt;nav&gt;</span
+                ></strong
+              >
+              container, add an ID. Add a link to the week-5 folder:<br /><br /><strong
+                ><span style="font-family: courier, 'courier new', monospace;"
+                  >&lt;nav id="bit112-nav"&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;a
+                  href="weeks-1-3/index.html"&gt;Weeks
+                  1-3&lt;/&gt;&lt;/li&gt;<br />&lt;li&gt;&lt;a
+                  href="week-4/index.html"&gt;Week 4&lt;/a&gt;&lt;/li&gt;<br />&lt;li&gt;&lt;a
+                  href="week-5/index.html"&gt;Week 5&lt;/a&gt;&lt;/li&gt;<br />&lt;/ul&gt;<br />&lt;/nav&gt;</span
+                ></strong
+              >
+            </p>
+          </li>
+          <li>
+            In the week-5 folder, go to whichever page has the
+            <strong
+              ><span style="font-family: courier, 'courier new', monospace;"
+                >&lt;section&gt;</span
+              ></strong
+            >
+            that contains the responsive images you created last week.
+            <ol>
+              <li>
+                <p>Add an ID to that section tag.</p>
+              </li>
+              <li>
+                <p>
+                  Add multiple paragraphs that talk about the image: why you
+                  chose it, what's going on in it, the history or circumstances
+                  or anything else you can add so you get about ten lines of
+                  text.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Add an ID to the next
+                  <strong
+                    ><span
+                      style="font-family: courier, 'courier new', monospace;"
+                      >&lt;section&gt;</span
+                    ></strong
+                  >
+                  container as well.
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>On the week-5/about-me.html page, create a new section.</p>
+            <ol>
+              <li>
+                <p>Give it an ID like <em>birthplace</em>.</p>
+              </li>
+              <li>
+                <p>
+                  Add something like
+                  <strong
+                    ><span
+                      style="font-family: courier, 'courier new', monospace;"
+                      >&lt;h2&gt;My birthplace&lt;/h2&gt;</span
+                    ></strong
+                  >.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Create a
+                  <strong
+                    ><span
+                      style="font-family: courier, 'courier new', monospace;"
+                      >&lt;div class="bit-columns"&gt;...&lt;/div&gt;</span
+                    ></strong
+                  >
+                  container after the closing
+                  <strong
+                    ><span
+                      style="font-family: courier, 'courier new', monospace;"
+                      >&lt;/h2&gt;</span
+                    ></strong
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  Add several paragraphs of text, preferably 20-30 lines between
+                  the
+                  <strong
+                    ><span
+                      style="font-family: courier, 'courier new', monospace;"
+                      >&lt;div class="bit-columns"&gt;</span
+                    ></strong
+                  >&nbsp;and the
+                  <strong
+                    ><span
+                      style="font-family: courier, 'courier new', monospace;"
+                      >&lt;/div&gt;</span
+                    ></strong
+                  >. It's fine to copy this text from somewhere like Wikipedia;
+                  just be sure to end the section with a paragraph that says
+                  <em>Source: Wikipedia</em> and has a hyperlink to the page you
+                  got the text from.
+                </p>
+              </li>
+              <li>Give the first paragraph a classname, like <i>intro</i>.</li>
+            </ol>
+          </li>
+          <li>
+            <p>That's the minimum for HTML changes. Feel free to add more.</p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <p><strong>Make some changes to your main style/style.css.</strong></p>
+        <ol>
+          <li>
+            <p>
+              Create positioning declarations (padding, margin, display, float,
+              position, width, height, etc.) for the<em
+                ><strong> Header, Nav, Main, Footer </strong></em
+              >sections on your main index.html page.
+            </p>
+          </li>
+          <li>
+            <p>
+              Create a rule for the list items in the navigation, using the nav
+              ID you created earlier. You've already set up&nbsp;navigation to
+              be horizontal, so this is just moving that CSS to the rule for the
+              ID, and maybe adjusting things a little.
+            </p>
+            <ol>
+              <li>
+                <p>Set the display for the list items to be inline-block</p>
+              </li>
+              <li>
+                <p>
+                  Use padding and maybe a border-right or border-left to make
+                  the navigation look okay.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Set a uniform width for the list items in your navigation.
+                </p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <p>
+          <strong
+            >Make these changes to your linked style/style.css that's in the
+            week-5 folder:</strong
+          >
+        </p>
+        <ol>
+          <li>
+            <p>
+              Create a rule for the figure container, using the section ID you
+              created earlier. Float the figure container to the right or left.
+              Add some padding so the text doesn't run right up against the
+              image.
+            </p>
+            <p
+              style="font-family: courier, 'courier new', monospace; font-weight: bold;"
+            >
+              section#porpoise figure { <br />float: left; <br />padding-right:
+              2em;<br />}
+            </p>
+            <p>
+              You might find that the responsive image is too big for things to
+              float next to it. You can manage that by setting a percentage
+              width, for example:
+            </p>
+            <p
+              style="font-family: courier, 'courier new', monospace; font-weight: bold;"
+            >
+              section#porpoise figure img { <br />width: 60%; <br />}
+            </p>
+            <p>
+              It will still use the responsive image, but display it at 60%
+              instead of 100% of its width.
+            </p>
+          </li>
+          <li>
+            <p>
+              Create a rule for the section following the one with the image,
+              using clear:left so that this next section ignores the float, and
+              moves back into the normal page layout flow.
+            </p>
+            <p
+              style="font-family: courier, 'courier new', monospace; font-weight: bold;"
+            >
+              section#after-image { <br />clear: left;<br />}
+            </p>
+          </li>
+          <li>
+            <p>
+              Create at least ten positioning declarations (padding, margin,
+              display, float, position, width, height, etc.) for the<em
+                ><strong> Header, Nav, Main, Footer </strong></em
+              >sections.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use relative positioning to offset the .intro class you created
+              earlier, and change its size and color or something. Here's my
+              example.
+            </p>
+            <div
+              style="font-family: courier, 'courier new', monospace; font-weight: bold;"
+            >
+              <p>.intro {</p>
+              <p style="padding-left: 40px;">
+                position: relative<br />/* relative positioning means move it
+                this far from where it would normally be */ <br />top: 20px;<br />left:
+                20px;<br />font-size: 1.5em;<br />color: #333333;
+              </p>
+              }
+            </div>
+          </li>
+          <li>
+            <p>
+              Using&nbsp;<a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout"
+                >https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout</a
+              >&nbsp;as a guide, set the <em>bit-columns</em> class to display
+              in three columns.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries"
+                >https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries</a
+              >&nbsp;as a guide, change the <em>bit-columns</em> class
+            </p>
+            <ol>
+              <li>
+                <p>
+                  to two columns when the min-width is 321px and the max-width
+                  is 600px.
+                </p>
+              </li>
+              <li>
+                <p>
+                  to one column when the width is less than 321px<br />hint:
+                  <em>unset</em> is your friend.
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/unset"
+                    >https://developer.mozilla.org/en-US/docs/Web/CSS/unset</a
+                  >&nbsp;
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <p>
+              Add comments to your CSS to explain what the different parts do.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Accessibility</h2>
+        <ol>
+          <ol>
+            <li>
+              <p>
+                Continue to use the
+                <a
+                  href="https://accessibilityinsights.io/docs/en/web/overview"
+                  target="_blank"
+                  rel="noopener"
+                  >Accessibility Insights extension</a
+                >
+                for Chrome or Firefox.
+              </p>
+            </li>
+            <li>
+              <p>Check your pages.</p>
+              <ol>
+                <li>
+                  <p>Fix what you can figure out</p>
+                </li>
+                <li>
+                  <p>
+                    Ask for help on Slack for anything you can't figure out.
+                  </p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </ol>
+      </section>
+      <p>Upload your completed work to GitHub.</p>
+      <p>
+        Once uploaded, be sure to
+        <a
+          class="external"
+          href="http://validator.w3.org/"
+          target="_blank"
+          rel="noopener"
+          >validate your pages</a
+        >.
+      </p>
+      <p>
+        Once validated, do one more
+        <a href="https://wave.webaim.org/extension/">accessibility check</a>,
+        this time via the WAVE evaluation tool from Web AIM.
+      </p>
+    </main>
+  </body>
+</html>
