@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+<meta charset="utf-8" />
+<title>Week four lab</title>
+<style>
+section {
+    border-bottom: 1px solid #333333;
+}
+header {
+    border-bottom: 3px solid #999999;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Week six lab</h1>
+</header>
+<main>
+  <p>This lab will apply CSS from the week six reading and videos to your own web pages from assignment one.</p>
+  <section>
+    <h2>HTML</h2>
+    <p>assign style guide</p>
+    <ol>
+      <li>
+        <p>Create a new folder called week-6, and copy everything from week-5 into that. This new folder should now have your completed HTML, CSS and images from week 5, so you can update it for week 6.</p>
+      </li>
+      <li>
+        <p>On your site root index.html:</p>
+        <ol>
+          <li>
+            <p>Just before the closing <strong><span style="font-family: courier, 'courier new', monospace;">&lt;/body&gt;</span></strong> on your index.html page, paste in these lines:</p>
+            <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;!-- Enable includes --&gt;<br>
+              &lt;script src="scripts/includes.js"&gt;&lt;script&gt;<br>
+              &lt;script&gt;<br>
+              includeHTML();<br>
+              &lt;/script&gt;</span></strong></p>
+          </li>
+          <li>
+            <p>Go to the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container.</p>
+            <ol>
+              <li>
+                <p>Just after the closing <strong><span style="font-family: courier, 'courier new', monospace;">&lt;/nav&gt;</span></strong> tag, paste this:</p>
+                <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div w3-include-html="nav.html"&gt;<br>
+                  &lt;/div&gt;</span></strong></p>
+              </li>
+              <li>
+                <p>Cut the contents of the entire <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container.</p>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>Create a new file in your main folder, named nav.html, and paste the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container contents into that.</p>
+      </li>
+      <li>
+        <p>Inside the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container, add a link to the week-6 folder:<br />
+          <br />
+          <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav id="bit112-nav"&gt;<br />
+          &lt;ul&gt;<br />
+          &lt;li&gt;&lt;a href="weeks-1-3/index.html"&gt;Weeks 1-3&lt;/&gt;&lt;/li&gt;<br />
+          &lt;li&gt;&lt;a href="week-4/index.html"&gt;Week 4&lt;/a&gt;&lt;/li&gt;<br />
+          &lt;li&gt;&lt;a href="week-5/index.html"&gt;Week 5&lt;/a&gt;&lt;/li&gt;<br />
+          &lt;li&gt;&lt;a href="week-6/index.html"&gt;Week 6&lt;/a&gt;&lt;/li&gt;<br />
+          &lt;/ul&gt;<br />
+          &lt;/nav&gt;</span></strong></p>
+      </li>
+      <li>
+        <p>Save both nav.html and index.html.</p>
+      </li>
+      <li>
+        <p>Create a new folder named <i>scripts</i>, off the site root.</p>
+      </li>
+      <li>
+        <p>In the <i>scripts</i> folder, create a new file. Name it <i>includes.js</i></p>
+      </li>
+      <li>
+        <p>Copy the contents of the the file at <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/scripts/includes.js" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/scripts/includes.js</a> and paste it into the new <i>includes.js</i> file you created.</p>
+      </li>
+      <li>
+        <p>Sync your work to GitHub. It should now include</p>
+        <ul>
+          <li>scripts/includes.js</li>
+          <li>nav.html</li>
+          <li>index.html with the new changes you made</li>
+          <li>the week-6 folder and all the files therein</li>
+        </ul>
+      </li>
+      <li>
+        <p>Wait a few minutes for the changes to sync to your site on GitHub.io and then load the main index.html page in your web browser. The navigation should still be visible, including the new week 6 link you just added.</p>
+        <p>This type of include will not show up on your computer, so you do have to view it on the server. It's worth it since it'll save you typing the same navigation on multiple pages.</p>
+      </li>
+      <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html</a></p>
+        <ol>
+          <li><p>Save the contents onto your site as template.html.</p></li>
+          <li><p>Edit the title, h1, and footer so they're yours and not mine.</p></li>
+          <li><p>Base any new files you create off this template, and they will automatically include the nav.html. Better still, any changes you make to your navigation will automatically show up in all files the used the template.</p></li>
+        </ol>
+      </li>
+      <li>
+        <p>That's the minimum for HTML changes. Feel free to add more.</p>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h2>CSS</h2>
+    <p><strong>Make some changes to your main style/style.css.</strong></p>
+    <ol>
+      <li>
+        <p>Create positioning declarations (padding, margin, display, float, position, width, height, etc.) for the<em><strong> Header, Nav, Main, Footer </strong></em>sections on your main index.html page.</p>
+      </li>
+      <li>
+        <p>Create a rule for the list items in the navigation, using the nav ID you created earlier. You've already set up&nbsp;navigation to be horizontal, so this is just moving that CSS to the rule for the ID, and maybe adjusting things a little.</p>
+        <ol>
+          <li>
+            <p>Set the display for the list items to be inline-block</p>
+          </li>
+          <li>
+            <p>Use padding and maybe a border-right or border-left to make the navigation look okay.</p>
+          </li>
+          <li>
+            <p>Set a uniform width for the list items in your navigation.</p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p><strong>Make these changes to your linked style/style.css that's in the week-5 folder:</strong></p>
+    <ol>
+      <li>
+        <p>Create a rule for the figure container, using the section ID you created earlier. Float the figure container to the right or left. Add some padding so the text doesn't run right up against the image.</p>
+        <p style="font-family: courier, 'courier new', monospace; font-weight: bold;">section#porpoise figure { <br />
+          float: left; <br />
+          padding-right: 2em;<br />
+          }</p>
+        <p>You might find that the responsive image is too big for things to float next to it. You can manage that by setting a percentage width, for example:</p>
+        <p style="font-family: courier, 'courier new', monospace; font-weight: bold;">section#porpoise figure img { <br />
+          width: 60%; <br />
+          }</p>
+        <p>It will still use the responsive image, but display it at 60% instead of 100% of its width.</p>
+      </li>
+      <li>
+        <p>Create a rule for the section following the one with the image, using clear:left so that this next section ignores the float, and moves back into the normal page layout flow.</p>
+        <p style="font-family: courier, 'courier new', monospace; font-weight: bold;">section#after-image { <br />
+          clear: left;<br />
+          }</p>
+      </li>
+      <li>
+        <p>Create at least ten positioning declarations (padding, margin, display, float, position, width, height, etc.) for the<em><strong> Header, Nav, Main, Footer </strong></em>sections.</p>
+      </li>
+      <li>
+        <p>Use relative positioning to offset the .intro class you created earlier, and change its size and color or something. Here's my example.</p>
+        <div style="font-family: courier, 'courier new', monospace; font-weight: bold;">
+          <p>.intro {</p>
+          <p style="padding-left: 40px;">position: relative<br />
+            /* relative positioning means move it this far from where it would normally be */ <br />
+            top: 20px;<br />
+            left: 20px;<br />
+            font-size: 1.5em;<br />
+            color: #333333;</p>
+          }</div>
+      </li>
+      <li>
+        <p>Using&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout</a>&nbsp;as a guide, set the <em>bit-columns</em> class to display in three columns.</p>
+      </li>
+      <li>
+        <p>Using <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries</a>&nbsp;as a guide, change the <em>bit-columns</em> class</p>
+        <ol>
+          <li>
+            <p>to two columns when the min-width is 321px and the max-width is 600px.</p>
+          </li>
+          <li>
+            <p>to one column when the width is less than 321px<br />
+              hint: <em>unset</em> is your friend. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/unset">https://developer.mozilla.org/en-US/docs/Web/CSS/unset</a>&nbsp;</p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>Add comments to your CSS to explain what the different parts do.</p>
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h2>Accessibility</h2>
+    <ol>
+      <li>
+        <p><span style="font-size: 1rem;">Read&nbsp;<a href="https://khan.github.io/tota11y/" target="_blank" rel="noopener">https://khan.github.io/tota11y/</a></span></p>
+      </li>
+      <li><span style="font-size: 1rem;">In the "Install" section, click the tota11y button and drag it to the bookmarks/favorites bar on your web browser.</span></li>
+      <li>
+        <p><span style="font-family: sans-serif; font-size: 1rem;">Check your pages.</span></p>
+        <ol>
+          <li>
+            <p>Fix what you can figure out</p>
+          </li>
+          <li>
+            <p>Ask for help on Slack for anything you can't figure out.</p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </section>
+  <p>Upload your completed work to GitHub.</p>
+  <p>Once uploaded, be sure to <a class="external" href="http://validator.w3.org/" target="_blank" rel="noopener">validate your pages</a>.</p>
+  <p>Once validated, do one more <a href="https://wave.webaim.org/extension/">accessibility check</a>, this time via the WAVE evaluation tool from Web AIM.</p>
+</main>
+</body>
+</html>
