@@ -17,10 +17,9 @@ header {
   <h1>Week six lab</h1>
 </header>
 <main>
-  <p>This lab will apply CSS from the week six reading and videos to your own web pages from assignment one.</p>
+  <p>Things are getting serious. Flexbox, CSS Grid, columns, responsive design, and Javascript includes.</p>
   <section>
     <h2>HTML</h2>
-    <p>assign style guide</p>
     <ol>
       <li>
         <p>Create a new folder called week-6, and copy everything from week-5 into that. This new folder should now have your completed HTML, CSS and images from week 5, so you can update it for week 6.</p>
@@ -104,82 +103,61 @@ header {
     </ol>
   </section>
   <section>
-    <h2>CSS</h2>
-    <p><strong>Make some changes to your main style/style.css.</strong></p>
+    <h2>Flexbox</h2>
     <ol>
       <li>
-        <p>Create positioning declarations (padding, margin, display, float, position, width, height, etc.) for the<em><strong> Header, Nav, Main, Footer </strong></em>sections on your main index.html page.</p>
+        <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html</a> and copy the code into a new page.</p>        
       </li>
+      <li><p>Save this page in your week-6 folder.</p></li>
+      <li><p>Add a link to this page from your week-6/index.html page.</p></li>
+      <li><p>Open the page in the web browser.</p></li>
+      <li><p>Scroll to the bottom and see what's going on</p></li>
+      <li><p>In the style container on this page, change the display for <b>section</b> from <i>display: block</i> to <i>display: flex</i> and save the page.</p></li>
+      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+        <p>What just happened?</p>
+        <p>We wanted the articles to be laid out as flexible boxes. To make that happen, you set the parent element (section, in this case) to be a flex container.</p>
+      <p>But, uh-oh, that section with the 12 articles doesn't fit. Now you have to scroll sideways to see them. That's a problem. And notice that it's gotten bigger than the section--the purple dotted line is the end of the section.</p></li>
       <li>
-        <p>Create a rule for the list items in the navigation, using the nav ID you created earlier. You've already set up&nbsp;navigation to be horizontal, so this is just moving that CSS to the rule for the ID, and maybe adjusting things a little.</p>
+        <p>Fix the third section so the articles fit nicely.</p>
         <ol>
           <li>
-            <p>Set the display for the list items to be inline-block</p>
+            <p>In the CSS for <b>#section-3</b>, add a rule that sets <i>flex-wrap: wrap;</i></p>
           </li>
           <li>
-            <p>Use padding and maybe a border-right or border-left to make the navigation look okay.</p>
+            <p>In the CSS for <b>#section-3 article</b>, add a declaration that sets <i>flex: 250px;</i>, and save the page</p>
           </li>
-          <li>
-            <p>Set a uniform width for the list items in your navigation.</p>
+          <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+            <p>What just happened?</p>
+            <p>We got rows — flexbox children (articles in this case) go into a row until the row is full, and any overflow is moved down to the next line. The <i>flex: 250px</i> on the articles means  each will be at least 250px wide. On the last row, they're wider so that the entire row is still filled.</p>
           </li>
         </ol>
       </li>
-    </ol>
-    <p><strong>Make these changes to your linked style/style.css that's in the week-5 folder:</strong></p>
-    <ol>
-      <li>
-        <p>Create a rule for the figure container, using the section ID you created earlier. Float the figure container to the right or left. Add some padding so the text doesn't run right up against the image.</p>
-        <p style="font-family: courier, 'courier new', monospace; font-weight: bold;">section#porpoise figure { <br />
-          float: left; <br />
-          padding-right: 2em;<br />
-          }</p>
-        <p>You might find that the responsive image is too big for things to float next to it. You can manage that by setting a percentage width, for example:</p>
-        <p style="font-family: courier, 'courier new', monospace; font-weight: bold;">section#porpoise figure img { <br />
-          width: 60%; <br />
-          }</p>
-        <p>It will still use the responsive image, but display it at 60% instead of 100% of its width.</p>
-      </li>
-      <li>
-        <p>Create a rule for the section following the one with the image, using clear:left so that this next section ignores the float, and moves back into the normal page layout flow.</p>
-        <p style="font-family: courier, 'courier new', monospace; font-weight: bold;">section#after-image { <br />
-          clear: left;<br />
-          }</p>
-      </li>
-      <li>
-        <p>Create at least ten positioning declarations (padding, margin, display, float, position, width, height, etc.) for the<em><strong> Header, Nav, Main, Footer </strong></em>sections.</p>
-      </li>
-      <li>
-        <p>Use relative positioning to offset the .intro class you created earlier, and change its size and color or something. Here's my example.</p>
-        <div style="font-family: courier, 'courier new', monospace; font-weight: bold;">
-          <p>.intro {</p>
-          <p style="padding-left: 40px;">position: relative<br />
-            /* relative positioning means move it this far from where it would normally be */ <br />
-            top: 20px;<br />
-            left: 20px;<br />
-            font-size: 1.5em;<br />
-            color: #333333;</p>
-          }</div>
-      </li>
-      <li>
-        <p>Using&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multiple-column_Layout</a>&nbsp;as a guide, set the <em>bit-columns</em> class to display in three columns.</p>
-      </li>
-      <li>
-        <p>Using <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries</a>&nbsp;as a guide, change the <em>bit-columns</em> class</p>
-        <ol>
-          <li>
-            <p>to two columns when the min-width is 321px and the max-width is 600px.</p>
-          </li>
-          <li>
-            <p>to one column when the width is less than 321px<br />
-              hint: <em>unset</em> is your friend. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/unset">https://developer.mozilla.org/en-US/docs/Web/CSS/unset</a>&nbsp;</p>
-          </li>
-        </ol>
-      </li>
-      <li>
-        <p>Add comments to your CSS to explain what the different parts do.</p>
+      <li><p>Change the column sizes in the middle section</p>
+      <ol>
+        <li><p>In the CSS for <b> #section-2 article</b>, add a declaration that sets <i>flex: 1;</i></p></li>
+        <li><p>Make a new rule below the one for <b> #section-2 article</b>. We want to make the third article be twice as wide as the others, no matter what size.</p>
+        <p><b>#section-2 article:nth-of-type(3) {<br>
+            flex: 2;<br>
+          }</b></p>
+        </li>
+        <li><p>Save the code, refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+          <p>What just happened?</p>
+          <p>The <i>flex: 1</i> basically just says give everything an equal proportional space. The number is pretty arbitrary.</p>
+          <p>The <i>article:nth-of-type(3)</i> pseudoclass means find the 3rd article, and <i>flex: 2</i> means make it twice as wide as the others.</p>
+          <p>You can use px values or ems instead, if you prefer. Proportions just means I don't care that much about the exact side and I'm willing to let the computer do the math.</p> 
+      </ol>
       </li>
     </ol>
   </section>
+  <section>
+    <h2>CSS-Grid</h2>
+
+    <oL>
+      <li><p></p></li>
+    </oL>
+
+  </section>
+   
   <section>
     <h2>Accessibility</h2>
     <ol>
