@@ -108,7 +108,7 @@ header {
       <li>
         <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html</a> and copy the code into a new page.</p>        
       </li>
-      <li><p>Save this page in your week-6 folder.</p></li>
+      <li><p>Save this page in your week-6 folder. It's for a Flexbox demo.</p></li>
       <li><p>Add a link to this page from your week-6/index.html page.</p></li>
       <li><p>Open the page in the web browser.</p></li>
       <li><p>Scroll to the bottom and see what's going on</p></li>
@@ -144,7 +144,7 @@ header {
           <p>What just happened?</p>
           <p>The <i>flex: 1</i> basically just says give everything an equal proportional space. The number is pretty arbitrary.</p>
           <p>The <i>article:nth-of-type(3)</i> pseudoclass means find the 3rd article, and <i>flex: 2</i> means make it twice as wide as the others.</p>
-          <p>You can use px values or ems instead, if you prefer. Proportions just means I don't care that much about the exact side and I'm willing to let the computer do the math.</p> 
+          <p>You can use px values or ems instead, if you prefer. Proportions just means &quot;I don't care that much about the exact side and I'm willing to let the computer do the math.&quot;</p> 
       </ol>
       </li>
     </ol>
@@ -153,9 +153,42 @@ header {
     <h2>CSS-Grid</h2>
 
     <oL>
-      <li><p></p></li>
+      <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html</a> and copy the code into a new page.</p>        
+      </li>
+      <li><p>Save this page in your week-6 folder. It's for a CSS-Grid demo.</p></li>
+      <li><p>Add a link to this page from your week-6/index.html page.</p></li>
+      <li><p>Open the page in the web browser.</p></li>
+      <li><p>Scroll to the bottom and see what's going on</p></li>
+      <li><p>In the style container on this page, change the display for <b>.container</b> from <i>display: block</i> to <i>display: grid</i> and save the page.</p></li>
+      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+        <p>What just happened?</p>
+        <p>Oh. Nothing. Declaring <i>display: grid</i> gives you a one column grid, so your items will look the same as they did in normal flow.</p>
+      </li>
+      <li><p>In the .container rule, below the <i>display: grid</i>, add a second declaration:</p>
+      <p><i>grid-template-columns: 200px 200px 200px;</i> and save the page.</p></li>
+      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+        <p>What just happened?</p>
+        <p>With luck, the items have rearranged themselves one into each cell of the created grid.</p>
+      </li>
+      <li><p>Fine, but pixels are boring.</p>
+      <p>Change <i>grid-template-columns: 200px 200px 200px;</i> to <i>grid-template-columns: 2fr 1fr 1fr;</i> and save the page.</p></li>
+      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+        <p>What just happened?</p>
+        <p>The <i>fr</i>> unit distributes space in proportion. The first track now gets 2fr of the available space and the other two tracks get 1fr, making the first track larger. You can mix fr units and fixed length tracks.</p>
+      </li>
+      <li><p>Space me out.</p>
+      <p>Add this to the .container rule, below the grid-template-columns declaration:</p>
+      <p><i>grid-gap: 20px;<br>
+          gap: 20px;</i></p>
+      
+    </li>
+    <li><p>Save the code, refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+      <p>What just happened?</p>
+      <p>We got space between the grid items.</p>
+      <p>They're the same thing. The spec is changing from grid-gap to gap, so for now we use both so all the browsers will cooperate.</p>
+    </li>
     </oL>
-
+  <p>There is a ton more to CSS-Grid, but this is an intro class and I don't want to leave everyone with nothing left to learn. The reading at <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids</a> goes into a lot more detail if you want to apply more of this to your project.</p>
   </section>
    
   <section>
