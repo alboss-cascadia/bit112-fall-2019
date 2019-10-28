@@ -190,7 +190,45 @@ header {
     </oL>
   <p>There is a ton more to CSS-Grid, but this is an intro class and I don't want to leave everyone with nothing left to learn. The reading at <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids</a> goes into a lot more detail if you want to apply more of this to your project.</p>
   </section>
-   
+  <section>
+    <h2>Do I Flex or do I Grid? Or do I neither one?</h2>
+    <p>Whichever is easiest for what you're trying to do. Re-read <a href="https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf" target="_blank">The ultimate CSS battle: Grid vs Flexbox</a> and think about which might better meet your needs.</p>
+    <h3>However... what about columns?</h3>
+    <p>Often, the easiest approach for flexible columns is to just use columns.</p>
+    <h4>HTML</h4>
+<p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div class="five-col"&gt;<br>
+  <h2>This is the heading for these columns</h2><br>Lots of stuff in here. Could be pararaphs, articles, sections, anything<br>&lt;/div&gt;</span></strong></p>
+<h4>CSS</h4>
+<p><b>.five-col { <br>
+  columns: 200px 6; <br>
+  column-gap: 5em;<br>
+  column-rule: 1px solid black;<br>
+}</b></p>
+<p><b>.five-col h2 {<br>
+  column-span: all;<br>
+}</b></p>
+<p>The declaration is <i>columns</i>, followed by the minimum column-width you want, followed by the maximum number of columns you want. The browser figures out how many columns of at least that width will fit in the available space. Once the browser cannot fit at least 2 columns at your specified width then the columns will stop and drop into a single column. </p>
+<p>In the code above: </p>
+<ul>
+  <li><p><i>columns: 200px 6;</i> says columns can't be smaller than 200px wide, and we want no more than 6 columns no matter what. If the window is 1100px, you can't fit 6 columns of 200px into that, so there would be 5 columns.</p></li>
+  <li><p><i>column-gap: 5em;</i> says there will be 5em of space between each column.</p></li>
+  <li><p><i>column-rule: 1px solid black;</i> will put a black line between the columns</p></li>
+  <li><p><i>.five-col h2 { column-span: all; }</i> says, within the <i>five-col</i> class, we want the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;h2&gt;</span></strong> to go across all the columns.</p></li>
+</ul>
+<ol>
+    <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html</a> and copy the code into a new page.</p>        
+    </li>
+    <li><p>Save this page in your week-6 folder. It's for a CSS-Grid demo.</p></li>
+    <li><p>Add a link to this page from your week-6/index.html page.</p></li>
+    <li><p>Open the page in the web browser.</p></li>
+    <li><p>Scroll to the bottom and see what's going on</p></li>
+    <li><p>In the style container on this page, change the display for <b>.container</b> from <i>display: block</i> to <i>display: grid</i> and save the page.</p></li>
+    <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+      <p>What just happened?</p>
+      <p>Oh. Nothing. Declaring <i>display: grid</i> gives you a one column grid, so your items will look the same as they did in normal flow.</p>
+    </li>
+</ol>
+  </section> 
   <section>
     <h2>Accessibility</h2>
     <ol>
