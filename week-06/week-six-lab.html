@@ -2,7 +2,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 <meta charset="utf-8" />
-<title>Week four lab</title>
+<title>Week six lab</title>
 <style>
 section {
     border-bottom: 1px solid #333333;
@@ -174,7 +174,7 @@ header {
       <p>Change <i>grid-template-columns: 200px 200px 200px;</i> to <i>grid-template-columns: 2fr 1fr 1fr;</i> and save the page.</p></li>
       <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
         <p>What just happened?</p>
-        <p>The <i>fr</i>> unit distributes space in proportion. The first track now gets 2fr of the available space and the other two tracks get 1fr, making the first track larger. You can mix fr units and fixed length tracks.</p>
+        <p>The <i>fr</i> unit distributes space in proportion. The first track now gets 2fr of the available space and the other two tracks get 1fr, making the first track larger. You can mix fr units and fixed length tracks.</p>
       </li>
       <li><p>Space me out.</p>
       <p>Add this to the .container rule, below the grid-template-columns declaration:</p>
@@ -197,7 +197,7 @@ header {
     <p>Often, the easiest approach for flexible columns is to just use columns.</p>
     <h4>HTML</h4>
 <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div class="five-col"&gt;<br>
-  <h2>This is the heading for these columns</h2><br>Lots of stuff in here. Could be pararaphs, articles, sections, anything<br>&lt;/div&gt;</span></strong></p>
+  &lt;h2&gt;This is the heading for these columns&lt;/h2&gt;<br>Lots of stuff in here. Could be pararaphs, articles, sections, anything<br>&lt;/div&gt;</span></strong></p>
 <h4>CSS</h4>
 <p><b>.five-col { <br>
   columns: 200px 6; <br>
@@ -207,37 +207,65 @@ header {
 <p><b>.five-col h2 {<br>
   column-span: all;<br>
 }</b></p>
-<p>The declaration is <i>columns</i>, followed by the minimum column-width you want, followed by the maximum number of columns you want. The browser figures out how many columns of at least that width will fit in the available space. Once the browser cannot fit at least 2 columns at your specified width then the columns will stop and drop into a single column. </p>
-<p>In the code above: </p>
+<ol><li>
+<p>The declaration is <i>columns</i>, followed by the minimum column-width you want, followed by the maximum number of columns you want.</p></li>
+<li><p>The browser figures out how many columns of at least that width will fit in the available space.</p></li>
+<li><p>Once the browser cannot fit at least 2 columns at your specified width then the columns will stop and drop into a single column. </p></li>
+<li><p>In the code above: </p>
 <ul>
   <li><p><i>columns: 200px 6;</i> says columns can't be smaller than 200px wide, and we want no more than 6 columns no matter what. If the window is 1100px, you can't fit 6 columns of 200px into that, so there would be 5 columns.</p></li>
   <li><p><i>column-gap: 5em;</i> says there will be 5em of space between each column.</p></li>
   <li><p><i>column-rule: 1px solid black;</i> will put a black line between the columns</p></li>
   <li><p><i>.five-col h2 { column-span: all; }</i> says, within the <i>five-col</i> class, we want the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;h2&gt;</span></strong> to go across all the columns.</p></li>
 </ul>
+</li>
+<li><p>More coding!</p>
 <ol>
-    <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html</a> and copy the code into a new page.</p>        
+    <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/columns-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/columns-01.html</a> and copy the code into a new page.</p>        
     </li>
-    <li><p>Save this page in your week-6 folder. It's for a CSS-Grid demo.</p></li>
+    <li><p>Save this page in your week-6 folder. It's for a columns demo.</p></li>
     <li><p>Add a link to this page from your week-6/index.html page.</p></li>
     <li><p>Open the page in the web browser.</p></li>
     <li><p>Scroll to the bottom and see what's going on</p></li>
-    <li><p>In the style container on this page, change the display for <b>.container</b> from <i>display: block</i> to <i>display: grid</i> and save the page.</p></li>
-    <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-      <p>What just happened?</p>
-      <p>Oh. Nothing. Declaring <i>display: grid</i> gives you a one column grid, so your items will look the same as they did in normal flow.</p>
+    <li><p>In the style container on this page, add declarations for <b>section</b> to break the contents of the section container into columns with these characteristics</p>
+      <ul>
+          <li><p>at least 300px wide</p></li>
+          <li><p>not more than 4 columns</p></li>
+          <li><p>20px space between each column</p></li>
+          <li><p>a 5px dashed border whose color matches the header background color</p></li>
+      </ul>
     </li>
+    <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+      <p>Resize the window and watch the magic.</p>
+      <p>But wait, the articles are splitting arbitrarily across columns! Oh, noooo! I want each of my articles to remain in just one column.</p>
+      <p>What just happened?</p>
+      <p>In Flexbox and Grid, we applied the grid or flex display to the parent, just like we did with the columns being applied to the section. But this time we haven't specified any behavior for what's in the section, so it's obediently just splitting things to fit the space.</p>
+    </li>
+    <li><p>Tell the browser not to allow articles to break across columns.</p>
+      <p>Add these declarations to the CSS rule for article:</p>
+      <p><b>-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */<br>
+          page-break-inside: avoid; /* Firefox */<br>
+               break-inside: avoid; /* IE 10+ */</b></p>
+      
+    </li>
+    <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+      <p>Resize the window and watch the magic.</p>
+      <p>What just happened?</p>
+      <p>A miracle.</p>
+    </li>
+</ol>
+</li>
 </ol>
   </section> 
   <section>
     <h2>Accessibility</h2>
     <ol>
       <li>
-        <p><span style="font-size: 1rem;">Read&nbsp;<a href="https://khan.github.io/tota11y/" target="_blank" rel="noopener">https://khan.github.io/tota11y/</a></span></p>
+        <p>Read&nbsp;<a href="https://khan.github.io/tota11y/" target="_blank" rel="noopener">https://khan.github.io/tota11y/</a></p>
       </li>
-      <li><span style="font-size: 1rem;">In the "Install" section, click the tota11y button and drag it to the bookmarks/favorites bar on your web browser.</span></li>
+      <li>In the <i>Install</i> section, click the <b>tota11y</b> button and drag it to the bookmarks/favorites bar on your web browser.</li>
       <li>
-        <p><span style="font-family: sans-serif; font-size: 1rem;">Check your pages.</span></p>
+        <p>Check your pages.</p>
         <ol>
           <li>
             <p>Fix what you can figure out</p>
@@ -251,7 +279,7 @@ header {
   </section>
   <p>Upload your completed work to GitHub.</p>
   <p>Once uploaded, be sure to <a class="external" href="http://validator.w3.org/" target="_blank" rel="noopener">validate your pages</a>.</p>
-  <p>Once validated, do one more <a href="https://wave.webaim.org/extension/">accessibility check</a>, this time via the WAVE evaluation tool from Web AIM.</p>
+  <p>Once validated, do one more accessibility check, this either via the WAVE evaluation tool from Web AIM or the Accessibility Insights browser plugin.</p>
 </main>
 </body>
 </html>
