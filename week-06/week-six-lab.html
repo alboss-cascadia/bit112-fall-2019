@@ -15,271 +15,346 @@ header {
 <body>
 <header>
   <h1>Week six lab</h1>
+  <div w3-include-html="nav.html"></div>
 </header>
 <main>
-  <p>Things are getting serious. Flexbox, CSS Grid, columns, responsive design, and Javascript includes.</p>
-  <section>
+    <p>Things are getting serious. Flexbox, CSS Grid, columns, responsive design, and Javascript includes.</p>
+    <section>
     <h2>HTML</h2>
     <ol>
-      <li>
-        <p>Create a new folder called week-6, and copy everything from week-5 into that. This new folder should now have your completed HTML, CSS and images from week 5, so you can update it for week 6.</p>
-      </li>
-      <li>
-        <p>On your site root index.html:</p>
-        <ol>
-          <li>
-            <p>Just before the closing <strong><span style="font-family: courier, 'courier new', monospace;">&lt;/body&gt;</span></strong> on your index.html page, paste in these lines:</p>
-            <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;!-- Enable includes --&gt;<br>
-              &lt;script src="scripts/includes.js"&gt;&lt;/script&gt;<br>
-              &lt;script&gt;<br>
-              includeHTML();<br>
-              &lt;/script&gt;</span></strong></p>
-          </li>
-          <li>
-            <p>Go to the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container.</p>
-            <ol>
-              <li>
-                <p>Just after the closing <strong><span style="font-family: courier, 'courier new', monospace;">&lt;/nav&gt;</span></strong> tag, paste this:</p>
-                <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div w3-include-html="nav.html"&gt;<br>
-                  &lt;/div&gt;</span></strong></p>
-              </li>
-              <li>
-                <p>Cut the contents of the entire <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container.</p>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>
-        <p>Create a new file in your main folder, named nav.html, and paste the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container contents into that.</p>
-      </li>
-      <li>
-        <p>Inside the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container, add a link to the week-6 folder:<br />
-          <br />
-          <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav id="bit112-nav"&gt;<br />
-          &lt;ul&gt;<br />
-          &lt;li&gt;&lt;a href="weeks-1-3/index.html"&gt;Weeks 1-3&lt;/&gt;&lt;/li&gt;<br />
-          &lt;li&gt;&lt;a href="week-4/index.html"&gt;Week 4&lt;/a&gt;&lt;/li&gt;<br />
-          &lt;li&gt;&lt;a href="week-5/index.html"&gt;Week 5&lt;/a&gt;&lt;/li&gt;<br />
-          &lt;li&gt;&lt;a href="week-6/index.html"&gt;Week 6&lt;/a&gt;&lt;/li&gt;<br />
-          &lt;/ul&gt;<br />
-          &lt;/nav&gt;</span></strong></p>
-      </li>
-      <li>
-        <p>Save both nav.html and index.html.</p>
-      </li>
-      <li>
-        <p>Create a new folder named <i>scripts</i>, off the site root.</p>
-      </li>
-      <li>
-        <p>In the <i>scripts</i> folder, create a new file. Name it <i>includes.js</i></p>
-      </li>
-      <li>
-        <p>Copy the contents of the the file at <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/scripts/includes.js" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/scripts/includes.js</a> and paste it into the new <i>includes.js</i> file you created.</p>
-      </li>
-      <li>
-        <p>Sync your work to GitHub. It should now include</p>
-        <ul>
-          <li>scripts/includes.js</li>
-          <li>nav.html</li>
-          <li>index.html with the new changes you made</li>
-          <li>the week-6 folder and all the files therein</li>
-        </ul>
-      </li>
-      <li>
-        <p>Wait a few minutes for the changes to sync to your site on GitHub.io and then load the main index.html page in your web browser. The navigation should still be visible, including the new week 6 link you just added.</p>
-        <p>This type of include will not show up on your computer, so you do have to view it on the server. It's worth it since it'll save you typing the same navigation on multiple pages.</p>
-      </li>
-      <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html</a></p>
-        <ol>
-          <li><p>Save the contents onto your site as template.html.</p></li>
-          <li><p>Edit the title, h1, and footer so they're yours and not mine.</p></li>
-          <li><p>Base any new files you create off this template, and they will automatically include the nav.html. Better still, any changes you make to your navigation will automatically show up in all files the used the template.</p></li>
-        </ol>
-      </li>
-      <li>
-        <p>That's the minimum for HTML changes. Feel free to add more.</p>
-      </li>
+    <li>
+    <p>Create a new folder called week-6, and copy everything from week-5 into that. This new folder should now have your completed HTML, CSS and images from week 5, so you can update it for week 6.</p>
+    </li>
+    <li>
+    <p>On your site root index.html:</p>
+    <ol>
+    <li>
+    <p>Just before the closing <strong><span style="font-family: courier, 'courier new', monospace;">&lt;/body&gt;</span></strong> on your index.html page, paste in these lines:</p>
+    <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;!-- Enable includes --&gt;<br />&lt;script src="scripts/includes.js"&gt;&lt;/script&gt;<br />&lt;script&gt;<br />includeHTML();<br />&lt;/script&gt;</span></strong></p>
+    <p style="padding-left: 40px;"><em>If you want to use includes throughout your site, you'll have to change the above link to be whatever location your script is in, preceded with a slash. For me, it would be <strong><span style="font-family: courier, 'courier new', monospace;">&lt;script src="/bit112-fall-2019/scripts/includes.js"&gt;</span></strong> because my site is https://alboss-cascadia.github.io/bit112-fall-2019/</em></p>
+    <p style="padding-left: 40px;">If your main page is simply something like <em>https://alboss-cascadia.github.io/</em> then simply start the link with a slash: <strong><span style="font-family: courier, 'courier new', monospace;">&lt;script src="/scripts/includes.js"&gt;</span></strong></p>
+  </li>
+    <li>
+    <p>Go to the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container.</p>
+    <ol>
+    <li>
+    <p>Just after the closing <strong><span style="font-family: courier, 'courier new', monospace;">&lt;/nav&gt;</span></strong> tag, paste this:</p>
+    <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div w3-include-html="nav.html"&gt;<br />&lt;/div&gt;</span></strong></p>
+    <p style="padding-left: 40px;"><em>If you want to use includes throughout your site, you'll have to change the above link to be whatever location your nav.html is in, preceded with a slash. For me, it would be <strong><span style="font-family: courier, 'courier new', monospace;">&lt;div w3-include-html="/bit112-fall-2019/nav.html"&gt;<br />&lt;/div&gt;</span></strong> because my site is https://alboss-cascadia.github.io/bit112-fall-2019/</em></p>
+    
+    <p style="padding-left: 40px;">If your main page is simply something like <em>https://alboss-cascadia.github.io/</em> then simply start the link with a slash: <strong><span style="font-family: courier, 'courier new', monospace;">&lt;div w3-include-html="/nav.html"&gt;</span></strong></p></li>
+    <li>
+    <p>Cut the contents of the entire <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container.</p>
+    </li>
+    </ol>
+    </li>
+    </ol>
+    </li>
+    <li>
+    <p>Create a new file in your main folder, named nav.html, and paste the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container contents into that.</p>
+    </li>
+    <li>
+    <p>Inside the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav&gt;</span></strong> container,</p>
+    <ol>
+    <li>put a <strong><span style="font-family: courier, 'courier new', monospace;">/</span></strong> slash in front of the folder names for each href, and</li>
+    <li>
+    <p>add a link to the week-6 folder:</p>
+    <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;nav id="bit112-nav"&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;a href="/weeks-1-3/index.html"&gt;Weeks 1-3&lt;/&gt;&lt;/li&gt;<br />&lt;li&gt;&lt;a href="/week-4/index.html"&gt;Week 4&lt;/a&gt;&lt;/li&gt;<br />&lt;li&gt;&lt;a href="/week-5/index.html"&gt;Week 5&lt;/a&gt;&lt;/li&gt;<br />&lt;li&gt;&lt;a href="/week-6/index.html"&gt;Week 6&lt;/a&gt;&lt;/li&gt;<br />&lt;/ul&gt;<br />&lt;/nav&gt;</span></strong></p>
+    </li>
+    </ol>
+    </li>
+    <li>
+    <p>Save both nav.html and index.html.</p>
+    </li>
+    <li>
+    <p>Create a new folder named <i>scripts</i>, off the site root.</p>
+    </li>
+    <li>
+    <p>In the <i>scripts</i> folder, create a new file. Name it <i>includes.js</i></p>
+    </li>
+    <li>
+    <p>Copy the contents of the the file at <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/scripts/includes.js" target="_blank" rel="noopener">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/scripts/includes.js</a> and paste it into the new <i>includes.js</i> file you created.</p>
+    </li>
+    <li>
+    <p>Sync your work to GitHub. It should now include</p>
+    <ul>
+    <li>scripts/includes.js</li>
+    <li>nav.html</li>
+    <li>index.html with the new changes you made</li>
+    <li>the week-6 folder and all the files therein</li>
+    </ul>
+    </li>
+    <li>
+    <p>Wait a few minutes for the changes to sync to your site on GitHub.io and then load the main index.html page in your web browser. The navigation should still be visible, including the new week 6 link you just added.</p>
+    <p>This type of include will not show up on your computer, so you do have to view it on the server. It's worth it since it'll save you typing the same navigation on multiple pages.</p>
+    </li>
+    <li>
+    <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html" target="_blank" rel="noopener">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/example.html</a></p>
+    <ol>
+    <li>
+    <p>Save the contents onto your site as template.html.</p>
+    </li>
+    <li>
+    <p>Edit the title, h1, and footer so they're yours and not mine.</p>
+    </li>
+    <li>
+    <p>Base any new files you create off this template, and they will automatically include the nav.html. Better still, any changes you make to your navigation will automatically show up in all files the used the template.</p>
+    </li>
+    </ol>
+    </li>
+    <li>
+    <p>That's the minimum for HTML changes. Feel free to add more.</p>
+    </li>
     </ol>
   </section>
   <section>
     <h2>Flexbox</h2>
     <ol>
-      <li>
-        <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html</a> and copy the code into a new page.</p>        
-      </li>
-      <li><p>Save this page in your week-6 folder. It's for a Flexbox demo.</p></li>
-      <li><p>Add a link to this page from your week-6/index.html page.</p></li>
-      <li><p>Open the page in the web browser.</p></li>
-      <li><p>Scroll to the bottom and see what's going on</p></li>
-      <li><p>In the style container on this page, change the display for <b>section</b> from <i>display: block</i> to <i>display: flex</i> and save the page.</p></li>
-      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-        <p>What just happened?</p>
-        <p>We wanted the articles to be laid out as flexible boxes. To make that happen, you set the parent element (section, in this case) to be a flex container.</p>
-      <p>But, uh-oh, that section with the 12 articles doesn't fit. Now you have to scroll sideways to see them. That's a problem. And notice that it's gotten bigger than the section--the purple dotted line is the end of the section.</p></li>
-      <li>
-        <p>Fix the third section so the articles fit nicely.</p>
-        <ol>
-          <li>
-            <p>In the CSS for <b>#section-3</b>, add a rule that sets <i>flex-wrap: wrap;</i></p>
-          </li>
-          <li>
-            <p>In the CSS for <b>#section-3 article</b>, add a declaration that sets <i>flex: 250px;</i>, and save the page</p>
-          </li>
-          <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-            <p>What just happened?</p>
-            <p>We got rows — flexbox children (articles in this case) go into a row until the row is full, and any overflow is moved down to the next line. The <i>flex: 250px</i> on the articles means  each will be at least 250px wide. On the last row, they're wider so that the entire row is still filled.</p>
-          </li>
-        </ol>
-      </li>
-      <li><p>Change the column sizes in the middle section</p>
-      <ol>
-        <li><p>In the CSS for <b> #section-2 article</b>, add a declaration that sets <i>flex: 1;</i></p></li>
-        <li><p>Make a new rule below the one for <b> #section-2 article</b>. We want to make the third article be twice as wide as the others, no matter what size.</p>
-        <p><b>#section-2 article:nth-of-type(3) {<br>
-            flex: 2;<br>
-          }</b></p>
-        </li>
-        <li><p>Save the code, refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-          <p>What just happened?</p>
-          <p>The <i>flex: 1</i> basically just says give everything an equal proportional space. The number is pretty arbitrary.</p>
-          <p>The <i>article:nth-of-type(3)</i> pseudoclass means find the 3rd article, and <i>flex: 2</i> means make it twice as wide as the others.</p>
-          <p>You can use px values or ems instead, if you prefer. Proportions just means &quot;I don't care that much about the exact side and I'm willing to let the computer do the math.&quot;</p> 
-      </ol>
-      </li>
+    <li>
+    <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html" target="_blank" rel="noopener">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/flexbox-01.html</a> and copy the code into a new page.</p>
+    </li>
+    <li>
+    <p>Save this page in your week-6 folder. It's for a Flexbox demo.</p>
+    </li>
+    <li>
+    <p>Add a link to this page from your week-6/index.html page.</p>
+    </li>
+    <li>
+    <p>Open the page in the web browser.</p>
+    </li>
+    <li>
+    <p>Scroll to the bottom and see what's going on</p>
+    </li>
+    <li>
+    <p>In the style container on this page, change the display for <strong>section</strong> from <i>display: block</i> to <i>display: flex</i> and save the page.</p>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>We wanted the articles to be laid out as flexible boxes. To make that happen, you set the parent element (section, in this case) to be a flex container.</p>
+    <p>But, uh-oh, that section with the 12 articles doesn't fit. Now you have to scroll sideways to see them. That's a problem. And notice that it's gotten bigger than the section--the purple dotted line is the end of the section.</p>
+    </li>
+    <li>
+    <p>Fix the third section so the articles fit nicely.</p>
+    <ol>
+    <li>
+    <p>In the CSS for <strong>#section-3</strong>, add a rule that sets <i>flex-wrap: wrap;</i></p>
+    </li>
+    <li>
+    <p>In the CSS for <strong>#section-3 article</strong>, add a declaration that sets <i>flex: 250px;</i> and save the page</p>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>We got rows &mdash; flexbox children (articles in this case) go into a row until the row is full, and any overflow is moved down to the next line. The <i>flex: 250px</i> on the articles means each will be at least 250px wide. On the last row, they're wider so that the entire row is still filled.</p>
+    </li>
+    </ol>
+    </li>
+    <li>
+    <p>Change the column sizes in the middle section</p>
+    <ol>
+    <li>
+    <p>In the CSS for <strong> #section-2 article</strong>, add a declaration that sets <i>flex: 1;</i></p>
+    </li>
+    <li>
+    <p>Make a new rule below the one for <strong> #section-2 article</strong>. We want to make the third article be twice as wide as the others, no matter what size.</p>
+    <p><strong>#section-2 article:nth-of-type(3) {<br />flex: 2;<br />}</strong></p>
+    </li>
+    <li>
+    <p>Save the code, refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>The <i>flex: 1</i> basically just says give everything an equal proportional space. The number is pretty arbitrary.</p>
+    <p>The <i>article:nth-of-type(3)</i> pseudoclass means find the 3rd article, and <i>flex: 2</i> means make it twice as wide as the others.</p>
+    <p>You can use px values or ems instead, if you prefer. Proportions just means "I don't care that much about the exact side and I'm willing to let the computer do the math."</p>
+    </li>
+    </ol>
+    </li>
     </ol>
   </section>
   <section>
     <h2>CSS-Grid</h2>
-
-    <oL>
-      <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html</a> and copy the code into a new page.</p>        
-      </li>
-      <li><p>Save this page in your week-6 folder. It's for a CSS-Grid demo.</p></li>
-      <li><p>Add a link to this page from your week-6/index.html page.</p></li>
-      <li><p>Open the page in the web browser.</p></li>
-      <li><p>Scroll to the bottom and see what's going on</p></li>
-      <li><p>In the style container on this page, change the display for <b>.container</b> from <i>display: block</i> to <i>display: grid</i> and save the page.</p></li>
-      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-        <p>What just happened?</p>
-        <p>Oh. Nothing. Declaring <i>display: grid</i> gives you a one column grid, so your items will look the same as they did in normal flow.</p>
-      </li>
-      <li><p>In the .container rule, below the <i>display: grid</i>, add a second declaration:</p>
-      <p><i>grid-template-columns: 200px 200px 200px;</i> and save the page.</p></li>
-      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-        <p>What just happened?</p>
-        <p>With luck, the items have rearranged themselves one into each cell of the created grid.</p>
-      </li>
-      <li><p>Fine, but pixels are boring.</p>
-      <p>Change <i>grid-template-columns: 200px 200px 200px;</i> to <i>grid-template-columns: 2fr 1fr 1fr;</i> and save the page.</p></li>
-      <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-        <p>What just happened?</p>
-        <p>The <i>fr</i> unit distributes space in proportion. The first track now gets 2fr of the available space and the other two tracks get 1fr, making the first track larger. You can mix fr units and fixed length tracks.</p>
-      </li>
-      <li><p>Space me out.</p>
-      <p>Add this to the .container rule, below the grid-template-columns declaration:</p>
-      <p><i>grid-gap: 20px;<br>
-          gap: 20px;</i></p>
-      
+    <ol>
+    <li>
+    <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html" target="_blank" rel="noopener">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/grid-01.html</a> and copy the code into a new page.</p>
     </li>
-    <li><p>Save the code, refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-      <p>What just happened?</p>
-      <p>We got space between the grid items.</p>
-      <p>They're the same thing. The spec is changing from grid-gap to gap, so for now we use both so all the browsers will cooperate.</p>
+    <li>
+    <p>Save this page in your week-6 folder. It's for a CSS-Grid demo.</p>
     </li>
-    </oL>
-  <p>There is a ton more to CSS-Grid, but this is an intro class and I don't want to leave everyone with nothing left to learn. The reading at <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids</a> goes into a lot more detail if you want to apply more of this to your project.</p>
+    <li>
+    <p>Add a link to this page from your week-6/index.html page.</p>
+    </li>
+    <li>
+    <p>Open the page in the web browser.</p>
+    </li>
+    <li>
+    <p>Scroll to the bottom and see what's going on</p>
+    </li>
+    <li>
+    <p>In the style container on this page, change the display for <strong>.container</strong> from <i>display: block</i> to <i>display: grid</i> and save the page.</p>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>Oh. Nothing. Declaring <i>display: grid</i> gives you a one column grid, so your items will look the same as they did in normal flow.</p>
+    </li>
+    <li>
+    <p>In the .container rule, below the <i>display: grid</i>, add a second declaration:</p>
+    <p><i>grid-template-columns: 200px 200px 200px;</i> and save the page.</p>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>With luck, the items have rearranged themselves one into each cell of the created grid.</p>
+    </li>
+    <li>
+    <p>Fine, but pixels are boring.</p>
+    <p>Change <i>grid-template-columns: 200px 200px 200px;</i> to <i>grid-template-columns: 2fr 1fr 1fr;</i> and save the page.</p>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>The <i>fr</i> unit distributes space in proportion. The first track now gets 2fr of the available space and the other two tracks get 1fr, making the first track larger. You can mix fr units and fixed length tracks.</p>
+    </li>
+    <li>
+    <p>Space me out.</p>
+    <p>Add this to the .container rule, below the grid-template-columns declaration:</p>
+    <p><i>grid-gap: 20px;<br />gap: 20px;</i></p>
+    </li>
+    <li>
+    <p>Save the code, refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>What just happened?</p>
+    <p>We got space between the grid items.</p>
+    <p>They're the same thing. The spec is changing from grid-gap to gap, so for now we use both so all the browsers will cooperate.</p>
+    </li>
+    </ol>
+    <p>There is a ton more to CSS-Grid, but this is an intro class and I don't want to leave everyone with nothing left to learn. The reading at <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids</a> goes into a lot more detail if you want to apply more of this to your project.</p>
   </section>
   <section>
-    <h2>Do I Flex or do I Grid? Or do I neither one?</h2>
-    <p>Whichever is easiest for what you're trying to do. Re-read <a href="https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf" target="_blank">The ultimate CSS battle: Grid vs Flexbox</a> and think about which might better meet your needs.</p>
+    <h2>Do I <em>Flex</em> or do I <em>Grid</em>? Or do I <em>neither one</em>?</h2>
+    <p>Whichever is easiest for what you're trying to do. Re-read <a href="https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf" target="_blank" rel="noopener">The ultimate CSS battle: Grid vs Flexbox</a> and think about which might better meet your needs.</p>
     <h3>However... what about columns?</h3>
     <p>Often, the easiest approach for flexible columns is to just use columns.</p>
     <h4>HTML</h4>
-<p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div class="five-col"&gt;<br>
-  &lt;h2&gt;This is the heading for these columns&lt;/h2&gt;<br>Lots of stuff in here. Could be pararaphs, articles, sections, anything<br>&lt;/div&gt;</span></strong></p>
-<h4>CSS</h4>
-<p><b>.five-col { <br>
-  columns: 200px 6; <br>
-  column-gap: 5em;<br>
-  column-rule: 1px solid black;<br>
-}</b></p>
-<p><b>.five-col h2 {<br>
-  column-span: all;<br>
-}</b></p>
-<ol><li>
-<p>The declaration is <i>columns</i>, followed by the minimum column-width you want, followed by the maximum number of columns you want.</p></li>
-<li><p>The browser figures out how many columns of at least that width will fit in the available space.</p></li>
-<li><p>Once the browser cannot fit at least 2 columns at your specified width then the columns will stop and drop into a single column. </p></li>
-<li><p>In the code above: </p>
-<ul>
-  <li><p><i>columns: 200px 6;</i> says columns can't be smaller than 200px wide, and we want no more than 6 columns no matter what. If the window is 1100px, you can't fit 6 columns of 200px into that, so there would be 5 columns.</p></li>
-  <li><p><i>column-gap: 5em;</i> says there will be 5em of space between each column.</p></li>
-  <li><p><i>column-rule: 1px solid black;</i> will put a black line between the columns</p></li>
-  <li><p><i>.five-col h2 { column-span: all; }</i> says, within the <i>five-col</i> class, we want the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;h2&gt;</span></strong> to go across all the columns.</p></li>
-</ul>
-</li>
-<li><p>More coding!</p>
-<ol>
-    <li><p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/columns-01.html" target="_blank">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/columns-01.html</a> and copy the code into a new page.</p>        
+    <p><strong><span style="font-family: courier, 'courier new', monospace;">&lt;div class="five-col"&gt;<br />&lt;h2&gt;This is the heading for these columns&lt;/h2&gt;<br />Lots of stuff in here. Could be pararaphs, articles, sections, anything<br />&lt;/div&gt;</span></strong></p>
+    <h4>CSS</h4>
+    <p><strong>.five-col { <br />columns: 200px 6; <br />column-gap: 5em;<br />column-rule: 1px solid black;<br />}</strong></p>
+    <p><strong>.five-col h2 {<br />column-span: all;<br />}</strong></p>
+    <ol>
+    <li>
+    <p>The declaration is <i>columns</i>, followed by the minimum column-width you want, followed by the maximum number of columns you want.</p>
     </li>
-    <li><p>Save this page in your week-6 folder. It's for a columns demo.</p></li>
-    <li><p>Add a link to this page from your week-6/index.html page.</p></li>
-    <li><p>Open the page in the web browser.</p></li>
-    <li><p>Scroll to the bottom and see what's going on</p></li>
-    <li><p>In the style container on this page, add declarations for <b>section</b> to break the contents of the section container into columns with these characteristics</p>
-      <ul>
-          <li><p>at least 300px wide</p></li>
-          <li><p>not more than 4 columns</p></li>
-          <li><p>20px space between each column</p></li>
-          <li><p>a 5px dashed border whose color matches the header background color</p></li>
-      </ul>
+    <li>
+    <p>The browser figures out how many columns of at least that width will fit in the available space.</p>
     </li>
-    <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-      <p>Resize the window and watch the magic.</p>
-      <p>But wait, the articles are splitting arbitrarily across columns! Oh, noooo! I want each of my articles to remain in just one column.</p>
-      <p>What just happened?</p>
-      <p>In Flexbox and Grid, we applied the grid or flex display to the parent, just like we did with the columns being applied to the section. But this time we haven't specified any behavior for what's in the section, so it's obediently just splitting things to fit the space.</p>
+    <li>
+    <p>Once the browser cannot fit at least 2 columns at your specified width then the columns will stop and drop into a single column.</p>
     </li>
-    <li><p>Tell the browser not to allow articles to break across columns.</p>
-      <p>Add these declarations to the CSS rule for <b>article</b>:</p>
-      <p><i>-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */<br>
-          page-break-inside: avoid; /* Firefox */<br>
-               break-inside: avoid; /* IE 10+ */</i></p>
-      
+    <li>
+    <p>In the code above:</p>
+    <ul>
+    <li>
+    <p><i>columns: 200px 6;</i> says columns can't be smaller than 200px wide, and we want no more than 6 columns no matter what. If the window is 1100px, you can't fit 6 columns of 200px into that, so there would be 5 columns.</p>
     </li>
-    <li><p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
-      <p>Resize the window and watch the magic.</p>
-      <p>What just happened?</p>
-      <p>A miracle.</p>
+    <li>
+    <p><i>column-gap: 5em;</i> says there will be 5em of space between each column.</p>
     </li>
-</ol>
-</li>
-</ol>
-  </section> 
+    <li>
+    <p><i>column-rule: 1px solid black;</i> will put a black line between the columns</p>
+    </li>
+    <li>
+    <p><i>.five-col h2 { column-span: all; }</i> says, within the <i>five-col</i> class, we want the <strong><span style="font-family: courier, 'courier new', monospace;">&lt;h2&gt;</span></strong> to go across all the columns.</p>
+    </li>
+    </ul>
+    </li>
+    <li>
+    <p>More coding!</p>
+    <ol>
+    <li>
+    <p>Go to <a href="https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/columns-01.html" target="_blank" rel="noopener">https://github.com/alboss-cascadia/bit112-fall-2019/blob/master/week-06/columns-01.html</a> and copy the code into a new page.</p>
+    </li>
+    <li>
+    <p>Save this page in your week-6 folder. It's for a columns demo.</p>
+    </li>
+    <li>
+    <p>Add a link to this page from your week-6/index.html page.</p>
+    </li>
+    <li>
+    <p>Open the page in the web browser.</p>
+    </li>
+    <li>
+    <p>Scroll to the bottom and see what's going on</p>
+    </li>
+    <li>
+    <p>In the style container on this page, add declarations for <strong>section</strong> to break the contents of the section container into columns with these characteristics</p>
+    <ul>
+    <li>
+    <p>at least 300px wide</p>
+    </li>
+    <li>
+    <p>not more than 4 columns</p>
+    </li>
+    <li>
+    <p>20px space between each column</p>
+    </li>
+    <li>
+    <p>a 5px dashed border whose color matches the header background color</p>
+    </li>
+    </ul>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>Resize the window and watch the magic.</p>
+    <p>But wait, the articles are splitting arbitrarily across columns! Oh, noooo! I want each of my articles to remain in just one column.</p>
+    <p>What just happened?</p>
+    <p>In Flexbox and Grid, we applied the grid or flex display to the parent, just like we did with the columns being applied to the section. But this time we haven't specified any behavior for what's in the section, so it's obediently just splitting things to fit the space.</p>
+    </li>
+    <li>
+    <p>Tell the browser not to allow articles to break across columns.</p>
+    <p>Add these declarations to the CSS rule for <strong>article</strong>:</p>
+    <p><i>-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */<br />page-break-inside: avoid; /* Firefox */<br />break-inside: avoid; /* IE 10+ */</i></p>
+    </li>
+    <li>
+    <p>Refresh the page in your browser, scroll down, and be amazed how easy that was.</p>
+    <p>Resize the window and watch the magic.</p>
+    <p>What just happened?</p>
+    <p>A miracle.</p>
+    </li>
+    </ol>
+    </li>
+    </ol>
+  </section>
   <section>
     <h2>Accessibility</h2>
     <ol>
-      <li>
-        <p>Read&nbsp;<a href="https://khan.github.io/tota11y/" target="_blank" rel="noopener">https://khan.github.io/tota11y/</a></p>
-      </li>
-      <li>In the <i>Install</i> section, click the <b>tota11y</b> button and drag it to the bookmarks/favorites bar on your web browser.</li>
-      <li>
-        <p>Check your pages.</p>
-        <ol>
-          <li>
-            <p>Fix what you can figure out</p>
-          </li>
-          <li>
-            <p>Ask for help on Slack for anything you can't figure out.</p>
-          </li>
-        </ol>
-      </li>
+    <li>
+    <p>Read&nbsp;<a href="https://khan.github.io/tota11y/" target="_blank" rel="noopener">https://khan.github.io/tota11y/</a></p>
+    </li>
+    <li>In the <i>Install</i> section, click the <strong>tota11y</strong> button and drag it to the bookmarks/favorites bar on your web browser.</li>
+    <li>
+    <p>Check your pages.</p>
+    <ol>
+    <li>
+    <p>Fix what you can figure out</p>
+    </li>
+    <li>
+    <p>Ask for help on Slack for anything you can't figure out.</p>
+    </li>
     </ol>
-  </section>
-  <p>Upload your completed work to GitHub.</p>
-  <p>Once uploaded, be sure to <a class="external" href="http://validator.w3.org/" target="_blank" rel="noopener">validate your pages</a>.</p>
-  <p>Once validated, do one more accessibility check, this either via the WAVE evaluation tool from Web AIM or the Accessibility Insights browser plugin.</p>
+    </li>
+    </ol>
+    </section>
+    <p>Upload your completed work to GitHub.</p>
+    <p>Once uploaded, be sure to <a class="external" href="http://validator.w3.org/" target="_blank" rel="noopener">validate your pages</a>.</p>
+    <p>Once validated, do one more accessibility check, this either via the WAVE evaluation tool from Web AIM or the Accessibility Insights browser plugin.</p>
 </main>
+<footer>
+    &copy;<a href="../index.html">Al Boss</a> for
+    <a href="https://cascadia.edu" target="_blank">Cascadia College</a>
+  </footer>
+  <!-- Enable includes -->
+  <script src="../scripts/includes.js"></script>
+  <script>
+    includeHTML();
+  </script>
 </body>
 </html>

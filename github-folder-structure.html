@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- change the above to href="/styles/style.css" whatever 
+      location your styles folder is in. For me, it would be "/bit112-fall-2019/styles/style.css" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ 
+      But, be aware that will make the CSS not display on your computer. You'll have to upload to GitHub and look there. -->
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Folder structure and GitHub</title>
+  </head>
+  <body>
+    <header>
+      <h1>Folder structure and GitHub</h1>
+      <div w3-include-html="nav.html"></div>
+      <!-- change the above to href="/nav.html" if you want it to work in all folders. If that does not work, put a slash and whatever 
+      location your site is in. For me, it would be "/bit112-fall-2019/nav.html" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+    </header>
+    <main>
+      <section>
+        <p>
+          Since I'm suggesting but not requiring the Git setup in the Visual
+          Code editor, that means not everyone will be using it.
+        </p>
+        <p>
+          The changes in folder structure from week 4 forward might be a bit
+          confusing to people, so here is a picture of what that should look
+          like.
+        </p>
+        <p>
+          <img
+            style="float: right; margin: 20px; border: 1px solid #666;"
+            src="images/site-structure.png"
+            alt="Folder structure for BIT 112 files"
+          />
+        </p>
+        <p>At the very top of your site, there will be:</p>
+        <ul>
+          <li>an index.html file,</li>
+          <li>a styles folder,</li>
+          <li>and an images folder.</li>
+        </ul>
+        <p>
+          These are my files, so don't panic if you don't have an exact match.
+          Depending on when you look at this, there might be things in this
+          image that you don't have. For example, in week 6 we will add a
+          nav.html file and a scripts folder, and from week 7 onward we might be
+          adding more things on the top levels as well.
+        </p>
+        <p>
+          At the top level, there will be a folder for every week. Your
+          weeks-1-3 will be in one folder, but after that there will be separate
+          folders for week-04, week-05, week-06 etc.
+        </p>
+        <p>
+          Each week folder will start with a copy of the previous week's work.
+          Each week folder will have at least:
+        </p>
+        <ul>
+          <li>index.html file</li>
+          <li>about-me.html file</li>
+          <li>styles folder with style.css</li>
+          <li>images folder</li>
+        </ul>
+        <p>
+          If you are using Visual Code and Git, keeping GitHub in sync with your
+          class files on your computer should take just a couple clicks and
+          typing in a description.
+        </p>
+        <p>
+          If you are using GitHub through a web browser, go to your repository
+          and click "Upload files." Then drag all the files and folders in your
+          web project folder into GitHub via your web browser. Here's a picture.
+        </p>
+        <p>
+          It's simplest to just drag everything. GitHub will sort out which
+          files have changed and which are exactly the same, so you don't need
+          to worry about that.
+        </p>
+        <p>
+          The following picture shows how it should look if you are adding to
+          GitHub.com via a web browser.
+        </p>
+        <p>
+          <img
+            style="clear: right; width: 100%;"
+            src="images/github-browser-commit.png"
+            alt="Add files to GitHub from your web browser. 1. Select all the files and folders that are in your main folder. 2. Drag the files and folders into the GitHub upload window. 3. Add a commit message to describe the changes. 4. Click the 'Commit Changes' button"
+          />
+        </p>
+        <p>
+          Your main page in GitHub should now have the same contents as the
+          folders and files on your computer. The topmost index.html and all the
+          folders for all the weeks, as well as the root style and images and
+          other folders.
+        </p>
+        <p>
+          I should be able to go to your main index.html page and follow links
+          to each week's lab assignments.
+        </p>
+        <p>
+          As always, if any of this isn't clear, please tell me what's not
+          obvious so I can fix it. Thanks!
+        </p>
+      </section>
+    </main>
+    <footer>
+      &copy;Al Boss for
+      <a href="https://cascadia.edu" target="_blank">Cascadia College</a>
+    </footer>
+    <!-- Enable includes -->
+    <script src="scripts/includes.js"></script>
+
+    <!-- If you are wanting to use includes throughout your site, you'll have to change the above link to be whatever 
+      location your script is in. For me, it would be "/bit112-fall-2019/scripts/includes.js" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

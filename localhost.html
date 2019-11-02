@@ -1,0 +1,240 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- change the above to href="/styles/style.css" whatever 
+      location your styles folder is in. For me, it would be "/bit112-fall-2019/styles/style.css" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ 
+      But, be aware that will make the CSS not display on your computer. You'll have to upload to GitHub and look there. -->
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Run a web server on your own computer</title>
+  </head>
+  <body>
+    <header>
+      <h1>Run a web server on your own computer</h1>
+      <div w3-include-html="nav.html"></div>
+      <!-- change the above to href="/nav.html" if you want it to work in all folders. If that does not work, put a slash and whatever 
+      location your site is in. For me, it would be "/bit112-fall-2019/nav.html" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+    </header>
+    <main>
+      <section>
+        <p>
+          Once your folder structure starts getting complicated and we start
+          using includes, we have a new problem that will affect people who are
+          doing fancy stuff like reusing the include link from multiple folders.
+          A link that works from one folder might not work from a subfolder.
+        </p>
+        <p>
+          If that's not a problem you are having, then that's fine. It's mostly
+          going to be a problem for people who are going beyond the minimums
+          described in the lab instructions.
+        </p>
+        <p>
+          If it's a problem you are having, the solution is start every
+          hyperlink with a / like this:
+        </p>
+        <pre>&lt;a href="/week-04/index.html"&gt;Week 4&lt;/a&gt;</pre>
+        <p>
+          That slash says, "from the site root, go to..." Now the navigation
+          should work no matter what folder it's in, and you should only need
+          the one file.
+        </p>
+        <p>
+          <strong>Important! Important! Important!</strong> That slash is the
+          <strong>root</strong> of your website.
+        </p>
+        <ul>
+          <li>
+            <p>
+              If your website is
+              <em>https://alboss-cascadia.github.io/</em> then
+              <strong
+                ><span style="font-family: courier, 'courier new', monospace;"
+                  >/week-04/index.html</span
+                ></strong
+              >
+              will open
+              <em>https://alboss-cascadia.github.io/week-04/index.html</em>.
+            </p>
+          </li>
+          <li>
+            <p>
+              However, if your website is
+              <em
+                >https://alboss-cascadia.github.io/<span style="color: red;"
+                  >bit112-fall-2019/</span
+                ></em
+              >
+              then you need to use
+              <strong
+                ><span style="font-family: courier, 'courier new', monospace;"
+                  >/bit112-fall-2019/week-04/index.html</span
+                ></strong
+              >
+              to get from the site root to the right place.
+            </p>
+          </li>
+        </ul>
+        <p>Be sure to put that same / here:</p>
+        <pre>&lt;script src="/scripts/includes.js"&gt;&lt;/script&gt;</pre>
+        <p>
+          (using the same important important important comment about site root
+          as above).
+        </p>
+        <p>
+          If you want it to use the main CSS and not something in a week folder,
+          change it here:
+        </p>
+        <pre>
+&lt;link rel="stylesheet" type="text/css" href="/styles/style.css" /&gt;</pre
+        >
+        <p>
+          (still using the same important important important comment about site
+          root as above).
+        </p>
+        <hr />
+        <h3>Great, Al, you broke my pages</h3>
+        <p>
+          When you start a link with a slash, that is shorthand for
+          <em>From the server root, go to..</em>. That works fine when the files
+          are on <em>github.io</em> but you won't be able to browse them or see
+          the CSS on your computer.
+        </p>
+        <p>
+          Some people are fine putting everything into GitHub to see how it
+          looks. If that's you, great!
+        </p>
+        <p>
+          Other people want to see how it looks without having to upload to
+          GitHub all the time. The solution is to install a Web server on your
+          computer. There are lots of complicated ways to do this, but the
+          simplest way is to use a free product that does all the complicated
+          stuff for you. There are plenty of these. I'm suggesting MAMP because
+          it's free and it works on both Windows and Mac OS.
+        </p>
+        <p>
+          <em
+            >Note that we are not turning your computer into a web server on the
+            Internet.</em
+          >
+        </p>
+        <ol>
+          <li>
+            <p>
+              Go to
+              <a href="https://www.mamp.info/en/" target="_blank" rel="noopener"
+                >https://www.mamp.info/en/"</a
+              >
+              and pick the free download.
+            </p>
+            <p>
+              They'll want to sell you the paid product but the free one is
+              fine.
+            </p>
+            <p>
+              (There is a $1.99 version in the Mac App store, if you want to go
+              that route. That'll work equally well for Mac users, and might be
+              less hassle.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Once the installation is complete, you&rsquo;ll find two folders
+              in your Applications (Mac) or Programs (Windows) folder &mdash;
+              one for MAMP, and another that is a 14-day free trial for MAMP
+              Pro. Open the folder named MAMP and launch the MAMP app.
+            </p>
+          </li>
+          <li>
+            <p>
+              When you install MAMP, it sets the default Document Root folder on
+              your computer. You can change this by going to the Web Server tab
+              and clicking Select. Change the default Document Root for your
+              MAMP website files by clicking the Select button and browsing to
+              wherever you're storing your files for BIT 112.
+            </p>
+          </li>
+          <li>
+            <p>
+              Click the &ldquo;Start Servers&rdquo; button in MAMP. That should
+              start the web server and load your index.html page, and all the
+              includes and links should work the same as they will on
+              <i>github.io</i>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Change code, save it, reload the page in the browser, and things
+              should all work.
+            </p>
+          </li>
+          <li>
+            <p>
+              Holy $#&amp;%, you just installed a working web server! Tell your
+              boss you deserve a raise, update your resume and LinkedIn page,
+              and show all your teachers the genius certificate you will
+              automatically get sent from Elon Musk.
+            </p>
+            <p style="padding-left: 40px;">
+              <em
+                >Genius certificate not guaranteed. Or even likely. But you do
+                deserve it.</em
+              >
+            </p>
+          </li>
+        </ol>
+        <h3>Caveats</h3>
+        <ol>
+          <li>
+            <p>
+              This is so far beyond what I'm supposed to be teaching in this
+              class that it's surreal. You are not obligated to do this.
+            </p>
+          </li>
+          <li>
+            <p>
+              That also means I am not obligated to make it work. :-) I'll help
+              as best I can.
+            </p>
+          </li>
+          <li>
+            <p>Remember to save your code before you reload the page.</p>
+          </li>
+          <li>
+            <p>
+              If you don't see your changes, you might need to empty your
+              browser cache (temporary Internet files)
+            </p>
+          </li>
+          <li>
+            <p>
+              You still have to upload your code to GitHub if you want me to be
+              able to help you with it.
+            </p>
+          </li>
+          <li>
+            <p>
+              You still have to upload your code to GitHub if you want me to be
+              able to grade it.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      &copy;Al Boss for
+      <a href="https://cascadia.edu" target="_blank">Cascadia College</a>
+    </footer>
+    <!-- Enable includes -->
+    <script src="scripts/includes.js"></script>
+
+    <!-- If you are wanting to use includes throughout your site, you'll have to change the above link to be whatever 
+      location your script is in. For me, it would be "/bit112-fall-2019/scripts/includes.js" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

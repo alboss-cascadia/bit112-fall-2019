@@ -32,7 +32,15 @@ header h2 {
 }
 
 /* Responsive navigation */
-
+header p.home {
+  float: right;
+  padding: 1em 2em;
+  position: relative;
+  top: -4em;
+}
+header p.home a {
+  text-decoration: none;
+}
 header nav {
   padding: 5px;
   margin: 0px;
@@ -42,7 +50,8 @@ header nav {
 header nav ul {
   list-style-type: none;
 }
-header nav ul li {
+header nav ul li,
+header p.home {
   display: inline-block;
   color: #cccccc;
   margin: auto;
@@ -62,7 +71,8 @@ header nav ul li.disabled a {
   background-color: #666666;
 }
 header nav ul li a:link,
-header nav ul li a:visited {
+header nav ul li a:visited,
+header p.home a {
   color: #cccccc;
 }
 header nav ul li a:hover {
@@ -79,6 +89,7 @@ header nav ul li a:active {
     width: 100%;
     display: block;
   }
+
   header nav ul li {
     width: 15%;
     float: left;
