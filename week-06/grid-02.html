@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Grid starting point</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style>
+      body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+      }
+      .container {
+        display: grid;
+        /* grid-template-columns: 200px 200px 200px; */
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 20px;
+        gap: 20px;
+      }
+      .container > div {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Simple grid example</h1>
+      <div w3-include-html="nav.html"></div>
+    </header>
+    <main>
+      <p><a href="grid-01.html">Original, unaltered version</a></p>
+      <div class="container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+      </div>
+    </main>
+    <footer>
+      &copy;<a href="../index.html">Al Boss</a> for
+      <a href="https://cascadia.edu" target="_blank">Cascadia College</a>
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
