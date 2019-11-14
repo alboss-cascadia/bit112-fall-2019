@@ -119,6 +119,9 @@ header nav ul li a:active {
 main {
   padding: 10px;
   font-size: 1.4rem; /* Make sure anything not declared in the CSS is bigger than 10px */
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.5;
 }
 section {
   border-top: 1px solid #333333;
