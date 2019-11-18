@@ -48,7 +48,7 @@ header nav ul li a {
   text-decoration: none;
   /* get rid of space between inline elements on hover */
   /* reference: https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
-  margin-right: -4px;
+  margin-left: -4px;
 }
 header nav ul li.disabled a {
   padding: 20px;

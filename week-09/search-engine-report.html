@@ -1,6 +1,5 @@
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
     <title>Search Engine Report</title>
@@ -46,18 +45,37 @@
       header nav ul li a:hover {
         background-color: #666;
       }
-      #project-plan dt {
+      dt {
         border-top: 2px solid #000;
         font-weight: bold;
         margin-top: 1em;
         padding-top: 1em;
       }
-      #project-plan dd:last-child {
-        border-bottom: 6px solid #000;
+      #top-dl dd {
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      #top-dl dd:last-child {
+        border-bottom: 2px solid #000;
         margin-bottom: 2em;
         padding-bottom: 1em;
         margin-left: inherit;
         padding-left: 2em;
+      }
+      .smaller {
+        font-size: 0.8em;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 6px;
+      }
+      td.unused {
+        background-color: #000;
       }
     </style>
   </head>
@@ -68,7 +86,8 @@
     </header>
     <main>
       <section>
-        <dl>
+        <h2>Search engines</h2>
+        <dl id="top-dl">
           <dt>How does a search engine work?</dt>
           <dd>Your answer here</dd>
           <dt>
@@ -96,6 +115,7 @@
       </section>
 
       <section>
+        <h2>Comparable websites</h2>
         <table>
           <thead>
             <tr>
@@ -103,14 +123,14 @@
               <th>URL</th>
               <th>Words used in page titles and headings</th>
               <th>
-                Words used in <em>Description</em> meta tags <br /><span
-                  class="smaller"
+                Words used in <em>Description</em> meta tags
+                <span class="smaller"
                   >(or "none" if no description tags are used)</span
                 >
               </th>
               <th>
-                Words used in <em>Keyword</em> meta tags <br /><span
-                  class="smaller"
+                Words used in <em>Keyword</em> meta tags
+                <span class="smaller"
                   >(or "none" if no keyword tags are used)</span
                 >
               </th>
@@ -118,36 +138,46 @@
           </thead>
           <tbody>
             <tr>
-              <td>Site 1</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+              <th rowspan="2">Site 1 name</th>
+              <td colspan="4">Site 1 URL goes here</td>
             </tr>
             <tr>
-              <td>Site 2</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+              <td class="unused">&nbsp;</td>
+              <td>Site 1 title words</td>
+              <td>Site 1 description words</td>
+              <td>Site 1 keywords</td>
             </tr>
             <tr>
-              <td>Site 3</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+              <th rowspan="2">Site 2 name</th>
+              <td colspan="4">Site 2 URL goes here</td>
+            </tr>
+            <tr>
+              <td class="unused">&nbsp;</td>
+              <td>Site 2 title words</td>
+              <td>Site 2 description words</td>
+              <td>Site 2 keywords</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Site 3 name</th>
+              <td colspan="4">Site 3 URL goes here</td>
+            </tr>
+            <tr>
+              <td class="unused">&nbsp;</td>
+              <td>Site 3 title words</td>
+              <td>Site 3 description words</td>
+              <td>Site 3 keywords</td>
             </tr>
           </tbody>
         </table>
       </section>
       <section>
-        <dl>
+        <h2>Research-based updates</h2>
+        <dl id="bottom-dl">
           <dt>
             Based on your research, suggest appropriate updates to your
             website's titles and headings.
           </dt>
-          <dd>Your suggestions here</dd>
+          <dd><p>Your suggestions here</p></dd>
           <dt>
             Based on your research, create a Description meta tag and a Keywords
             meta tag (and an Author meta tag) for inclusion your site.

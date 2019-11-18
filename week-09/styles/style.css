@@ -48,13 +48,7 @@ header nav ul li a {
   text-decoration: none;
   /* get rid of space between inline elements on hover */
   /* reference: https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
-  margin-right: -4px;
-}
-header nav ul li.disabled a {
-  padding: 20px;
-  cursor: not-allowed;
-  pointer-events: none;
-  background-color: #666666;
+  margin-left: -4px;
 }
 header nav ul li a:link,
 header nav ul li a:visited {
@@ -75,7 +69,6 @@ header nav ul li a:active {
     display: block;
   }
   header nav ul li {
-    width: 15%;
     float: left;
     padding: 3px;
   }
