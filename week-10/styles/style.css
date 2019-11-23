@@ -177,7 +177,7 @@ section#pioneeer-square {
 .intro {
   font-size: 1.25em;
   color: #666666;
-  position: relative
+  position: relative;
   /* relative positioning means move it this far from where it would normally be */
   top: 20px;
   left: 20px;
