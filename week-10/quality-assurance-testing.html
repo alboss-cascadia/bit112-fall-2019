@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <title>Quality assurance testing</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style>
+      aside {
+        display: block;
+        color: #999999;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -38,10 +44,19 @@
           menu option built into it, and most of the browser developer tools and
           consoles flag validation errors.
         </p>
+        <p>
+          A page that cannot pass an Accessibility scan is not considered a
+          valid page, so also validate your pages with
+          <a href="https://wave.webaim.org/" target="_blank"
+            >https://wave.webaim.org/</a
+          >
+          or another of the tools we've used in class.
+        </p>
 
         <p>
           Validate all the pages in your site, and make any changes required to
-          make your pages compliant with the HTML/CSS standards.
+          make your pages compliant with the HTML/CSS standards, including
+          accessibility.
           <strong>Note:</strong> you should have been doing this all along, so
           if you have been following instructions all along, then this isn't
           going to be a very big task.
@@ -120,6 +135,18 @@
                       <li>fonts</li>
                       <li>colors</li>
                       <li>layout</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Validity
+                    <aside>
+                      (You should not have to do complete scans for validity or
+                      accessibility. That's on the page author. However, if you
+                      see anything, report it as an issue.)
+                    </aside>
+                    <ol>
+                      <li>Code</li>
+                      <li>Accessibility</li>
                     </ol>
                   </li>
                 </ol>
