@@ -107,7 +107,7 @@ header nav ul li a:active {
 }
 @media screen and (max-width: 500px) {
   header nav ul li {
-    width: 50%;
+    width: 100%;
     float: left;
     padding: 3px;
   }
