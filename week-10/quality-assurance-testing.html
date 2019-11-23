@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Search Engine Report</title>
+    <style>
+      html {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer {
+        border-top: 6px solid #999;
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      header h1 {
+        background-color: #336699;
+        color: #ccc;
+        padding: 0.5em;
+        border-top: 5px solid #6699cc;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }
+      header nav ul {
+        list-style-type: none;
+        background-color: #999;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #666;
+      }
+      main section li {
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Quality assurance testing</h1>
+      <div w3-include-html="nav.html"></div>
+    </header>
+    <main>
+      <section>
+        <h2>What to do</h2>
+        <p></p>
+        <p>
+          For your work, the testing process will have two parts: HTML/CSS
+          Validation and a Quality Assurance (QA) review. Complete the
+          validation process on your own site, and complete the QA review of
+          other students' sites. (They'll be assigned to you automatically as
+          people turn them in for review this week.)
+        </p>
+
+        <p>
+          HTML validation errors related to google fonts can safely be ignored.
+        </p>
+        <p>
+          HTML/CSS validation uses a computerized checklist to carefully test
+          the structure of a webpage and report errors. The official W3C
+          validator is online at
+          <a href="http://validator.w3.org/" target="_blank"
+            >>http://validator.w3.org/</a
+          >
+        </p>
+        <p>
+          The Web Developer browser extension/toolbar also has a W3 validation
+          menu option built into it, and most of the browser developer tools and
+          consoles flag validation errors.
+        </p>
+
+        <p>
+          Validate all the pages in your site, and make any changes required to
+          make your pages compliant with the HTML/CSS standards.
+          <strong>Note:</strong> you should have been doing this all along, so
+          if you have been following instructions all along, then this isn't
+          going to be a very big task.
+        </p>
+        <p>
+          A Quality Assurance (QA) review is another important part of testing a
+          site. The process evaluates basic functionality, spelling, grammar,
+          browser compatability, and clarity, along with making sure the overall
+          presentation fits the tone of the site. QA Testing also makes a list
+          of known errors and issues needing correction. We will be using
+          GitHub's <em>Issues</em> function to list those for the sites you
+          review.
+        </p>
+      </section>
+      <section>
+        <h2>How to do it</h2>
+        <ol>
+          <li>Log into GitHub.</li>
+          <li>
+            On GitHub, navigate to the main page of the repository you're
+            reviewing.
+          </li>
+          <li>Under the repository name, click Issues.</li>
+          <li>
+            Click New issue.
+            <ul>
+              <li>
+                <em
+                  >If there are multiple issue type templates available in the
+                  repository, click </em
+                >Get started<em>
+                  next to the type of issue you'd like to open. That only
+                  happens if the repo owner has created templates for different
+                  issue types. Most of the time in this class, that's not going
+                  to happen, and GitHub will just open a new issue automatically
+                  for you.</em
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            Type a title and description for your issue. In the description,
+            include:
+            <ol>
+              <li>Page title</li>
+              <li>Filename</li>
+              <li>URL</li>
+              <li>
+                Type of issue:
+                <ol>
+                  <li>
+                    Page Functionality Problems
+                    <ol>
+                      <li>links</li>
+                      <li>rollovers</li>
+                      <li>scripts</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Content Problems
+                    <ol>
+                      <li>spelling</li>
+                      <li>grammar</li>
+                      <li>clarity</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Design Problems
+                    <ol>
+                      <li>fonts</li>
+                      <li>colors</li>
+                      <li>layout</li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li>Description of issue</li>
+            </ol>
+          </li>
+          <li>When you're finished, click Submit new issue.</li>
+          <li>Repeat until done.</li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      &copy;Al Boss for
+      <a href="https://cascadia.edu" target="_blank">Cascadia College</a>
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- If you are wanting to use includes throughout your site, you'll have to change the above link to be whatever 
+      location your script is in. For me, it would be "/bit112-fall-2019/scripts/includes.js" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
