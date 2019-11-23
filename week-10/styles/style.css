@@ -111,6 +111,13 @@ header nav ul li a:active {
     float: left;
     padding: 3px;
   }
+  header nav ul li a {
+    padding: 0.5em;
+    float: left;
+    display: block;
+    width: 100%;
+    border: none;
+  }
 }
 
 /* Done with navigation, finally */
